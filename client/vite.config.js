@@ -39,6 +39,8 @@ function localApi() {
 }
 
 export default defineConfig({
+  // GitHub Pages 처럼 하위 경로에 올릴 때만 STRATA_BASE 로 바꾼다. 평소 개발은 / 그대로다
+  base: process.env.STRATA_BASE || '/',
   plugins: [react(), localApi()],
   ssr: { external: ['kordoc'] },
   server: { port: 5173, ...(process.env.VITE_API_PROXY ? { proxy: { '/api': { target: process.env.VITE_API_PROXY, changeOrigin: true, secure: true } } } : {}) }

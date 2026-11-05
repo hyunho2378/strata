@@ -25,7 +25,7 @@ const FormFillPage = lazy(() => import('./pages/workspace/FormFillPage.jsx'))
 export default function App() {
   return (
     <LangProvider>
-      <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+      <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '') || '/'} future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
         <Toast />
         <GlobalTooltip />
         <ErrorBoundary>

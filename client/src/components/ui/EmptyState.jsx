@@ -9,7 +9,7 @@ import Button from './Button.jsx'
 export default function EmptyState({ tone = 'empty', title, desc, action, onRetry, image, className, compact = false }) {
   const { t } = useLang()
   const isError = tone === 'error'
-  const src = image || '/images/illustrations/empty.svg'
+  const src = image || (import.meta.env.BASE_URL + 'images/illustrations/empty.svg')
   return (
     <div
       className={clsx(compact ? 'py-8' : 'py-16', 'flex flex-col items-center text-center', className)}

@@ -10,11 +10,11 @@ export const REGION_PIECES = [{"code":"5115025000","name":"주문진읍","sgg":"
 
 // 3D 바탕 지도 이미지(tools/bake-basemap 으로 구움). 범위는 [서, 남, 동, 북] 경위도. 광역은 고도 격자와 같은 범위다
 export const BASEMAP = {
-  region: { url: '/terrain/basemap-region.webp', bbox: DEM_META.bbox },
-  detail: { url: '/terrain/basemap-detail.webp', bbox: [128.95, 37.4, 129.22, 37.64] }
+  region: { url: import.meta.env.BASE_URL + 'terrain/basemap-region.webp', bbox: DEM_META.bbox },
+  detail: { url: import.meta.env.BASE_URL + 'terrain/basemap-detail.webp', bbox: [128.95, 37.4, 129.22, 37.64] }
 }
 
 // 건물. 국토교통부 GIS건물통합정보(브이월드 데이터마켓 강원특별자치도 전체데이터, 기준일 2026. 9. 9., 공공누리 출처표시)에서
 // 동해시 강릉시 삼척시 정선군 태백시 196,111동을 골라 tools/bake-buildings/extract.cjs 로 만든 파일이다.
 // 높이는 대장 높이, 없으면 지상층수 x 3.2m, 둘 다 없으면 1층(3.2m). 층수가 있는 건물은 91,299동이다
-export const BUILDINGS = { url: '/terrain/buildings-nsdi.bin', bbox: DEM_META.bbox, source: '국토교통부 GIS건물통합정보(2026. 9. 9.)', count: 196111, withFloors: 91299 }
+export const BUILDINGS = { url: import.meta.env.BASE_URL + 'terrain/buildings-nsdi.bin', bbox: DEM_META.bbox, source: '국토교통부 GIS건물통합정보(2026. 9. 9.)', count: 196111, withFloors: 91299 }

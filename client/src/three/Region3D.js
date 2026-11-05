@@ -88,7 +88,7 @@ function pointInPoly(lon, lat, coordinates) {
 }
 
 async function loadDem() {
-  const res = await fetch('/terrain/region-dem.png')
+  const res = await fetch(import.meta.env.BASE_URL + 'terrain/region-dem.png')
   const bmp = await createImageBitmap(await res.blob(), { colorSpaceConversion: 'none', premultiplyAlpha: 'none' })
   const cv = new OffscreenCanvas(bmp.width, bmp.height)
   const g = cv.getContext('2d', { willReadFrequently: true })
