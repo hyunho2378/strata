@@ -1,0 +1,290 @@
+{
+"10100": {
+"name": "천곡동",
+"detached": 772,
+"detachedArea": 169285,
+"apartments": 313,
+"apartmentArea": 832645,
+"total": 1972
+},
+"10200": {
+"name": "평릉동",
+"detached": 277,
+"detachedArea": 53914,
+"apartments": 69,
+"apartmentArea": 264445,
+"total": 471
+},
+"10300": {
+"name": "송정동",
+"detached": 696,
+"detachedArea": 57268,
+"apartments": 10,
+"apartmentArea": 23014,
+"total": 1340
+},
+"10400": {
+"name": "용정동",
+"detached": 316,
+"detachedArea": 29745,
+"apartments": 22,
+"apartmentArea": 33288,
+"total": 583
+},
+"10500": {
+"name": "지흥동",
+"detached": 202,
+"detachedArea": 25493,
+"apartments": 1,
+"apartmentArea": 658,
+"total": 303
+},
+"10600": {
+"name": "효가동",
+"detached": 536,
+"detachedArea": 63725,
+"apartments": 75,
+"apartmentArea": 256347,
+"total": 924
+},
+"10700": {
+"name": "동회동",
+"detached": 231,
+"detachedArea": 27814,
+"apartments": 86,
+"apartmentArea": 393072,
+"total": 460
+},
+"10800": {
+"name": "나안동",
+"detached": 58,
+"detachedArea": 5657,
+"apartments": 0,
+"apartmentArea": 0,
+"total": 104
+},
+"10900": {
+"name": "쇄운동",
+"detached": 303,
+"detachedArea": 25596,
+"apartments": 45,
+"apartmentArea": 234437,
+"total": 508
+},
+"11000": {
+"name": "부곡동",
+"detached": 678,
+"detachedArea": 50932,
+"apartments": 71,
+"apartmentArea": 165987,
+"total": 1018
+},
+"11100": {
+"name": "발한동",
+"detached": 2647,
+"detachedArea": 158175,
+"apartments": 125,
+"apartmentArea": 238852,
+"total": 3694
+},
+"11200": {
+"name": "북평동",
+"detached": 127,
+"detachedArea": 10250,
+"apartments": 40,
+"apartmentArea": 142993,
+"total": 280
+},
+"11300": {
+"name": "구미동",
+"detached": 464,
+"detachedArea": 75160,
+"apartments": 23,
+"apartmentArea": 31038,
+"total": 653
+},
+"11400": {
+"name": "추암동",
+"detached": 53,
+"detachedArea": 4825,
+"apartments": 0,
+"apartmentArea": 0,
+"total": 148
+},
+"11500": {
+"name": "구호동",
+"detached": 4,
+"detachedArea": 223,
+"apartments": 2,
+"apartmentArea": 1231,
+"total": 533
+},
+"11600": {
+"name": "단봉동",
+"detached": 222,
+"detachedArea": 16055,
+"apartments": 20,
+"apartmentArea": 31174,
+"total": 385
+},
+"11700": {
+"name": "지가동",
+"detached": 101,
+"detachedArea": 7529,
+"apartments": 0,
+"apartmentArea": 0,
+"total": 115
+},
+"11800": {
+"name": "이도동",
+"detached": 211,
+"detachedArea": 17519,
+"apartments": 75,
+"apartmentArea": 285570,
+"total": 455
+},
+"11900": {
+"name": "귀운동",
+"detached": 56,
+"detachedArea": 3941,
+"apartments": 10,
+"apartmentArea": 1114,
+"total": 86
+},
+"12000": {
+"name": "대구동",
+"detached": 157,
+"detachedArea": 11142,
+"apartments": 0,
+"apartmentArea": 0,
+"total": 224
+},
+"12100": {
+"name": "호현동",
+"detached": 35,
+"detachedArea": 2575,
+"apartments": 0,
+"apartmentArea": 0,
+"total": 46
+},
+"12200": {
+"name": "내동",
+"detached": 19,
+"detachedArea": 1046,
+"apartments": 0,
+"apartmentArea": 0,
+"total": 20
+},
+"12300": {
+"name": "묵호진동",
+"detached": 1269,
+"detachedArea": 64795,
+"apartments": 16,
+"apartmentArea": 37504,
+"total": 1590
+},
+"12400": {
+"name": "삼화동",
+"detached": 70,
+"detachedArea": 5053,
+"apartments": 0,
+"apartmentArea": 0,
+"total": 423
+},
+"12500": {
+"name": "이기동",
+"detached": 29,
+"detachedArea": 1194,
+"apartments": 0,
+"apartmentArea": 0,
+"total": 35
+},
+"12600": {
+"name": "이로동",
+"detached": 490,
+"detachedArea": 33496,
+"apartments": 22,
+"apartmentArea": 32584,
+"total": 774
+},
+"12700": {
+"name": "어달동",
+"detached": 228,
+"detachedArea": 17611,
+"apartments": 0,
+"apartmentArea": 0,
+"total": 273
+},
+"12800": {
+"name": "대진동",
+"detached": 189,
+"detachedArea": 14992,
+"apartments": 1,
+"apartmentArea": 2848,
+"total": 240
+},
+"12900": {
+"name": "망상동",
+"detached": 223,
+"detachedArea": 27448,
+"apartments": 0,
+"apartmentArea": 0,
+"total": 438
+},
+"13000": {
+"name": "심곡동",
+"detached": 101,
+"detachedArea": 6866,
+"apartments": 0,
+"apartmentArea": 0,
+"total": 137
+},
+"13100": {
+"name": "초구동",
+"detached": 85,
+"detachedArea": 6593,
+"apartments": 0,
+"apartmentArea": 0,
+"total": 162
+},
+"13200": {
+"name": "괴란동",
+"detached": 79,
+"detachedArea": 5302,
+"apartments": 0,
+"apartmentArea": 0,
+"total": 127
+},
+"13300": {
+"name": "만우동",
+"detached": 120,
+"detachedArea": 8385,
+"apartments": 0,
+"apartmentArea": 0,
+"total": 167
+},
+"13400": {
+"name": "신흥동",
+"detached": 157,
+"detachedArea": 9520,
+"apartments": 0,
+"apartmentArea": 0,
+"total": 182
+},
+"13500": {
+"name": "비천동",
+"detached": 42,
+"detachedArea": 1830,
+"apartments": 0,
+"apartmentArea": 0,
+"total": 46
+},
+"13600": {
+"name": "달방동",
+"detached": 11,
+"detachedArea": 610,
+"apartments": 0,
+"apartmentArea": 0,
+"total": 11
+}
+}

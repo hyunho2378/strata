@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Strata 3D 엔진 확인</title>
+    <style>
+      html, body { margin: 0; height: 100%; background: #0f1216; font-family: Pretendard, system-ui, sans-serif; }
+      #stage { position: fixed; inset: 0; }
+      #panel { position: fixed; left: 16px; top: 16px; z-index: 10; display: flex; flex-direction: column; gap: 8px;
+        padding: 12px; width: 268px; background: rgba(255,255,255,0.94); border-radius: 12px; box-shadow: 0 6px 24px rgba(0,0,0,0.3); }
+      #panel .row { display: flex; flex-wrap: wrap; gap: 6px; }
+      #panel button { font: 500 12px/1.2 Pretendard, system-ui, sans-serif; padding: 7px 9px; border: 0; border-radius: 8px;
+        background: #e6e8ea; color: #1e2124; cursor: pointer; }
+      #panel button:hover { background: #cdd1d5; }
+      #panel .t { font: 700 12px/1.4 Pretendard, system-ui, sans-serif; color: #464c53; margin-top: 2px; }
+      #out { position: fixed; right: 16px; top: 16px; z-index: 10; padding: 10px 12px; border-radius: 10px;
+        background: rgba(15,18,22,0.82); color: #f4f5f6; font: 500 12px/1.6 Pretendard, system-ui, sans-serif; min-width: 210px; }
+    </style>
+  </head>
+  <body>
+    <div id="stage"></div>
+    <div id="panel">
+      <div class="t">장면</div>
+      <div class="row">
+        <button data-act="region">동해 전역</button>
+        <button data-act="school">학교 근접</button>
+        <button data-act="shelter">이로경로당</button>
+        <button data-act="clear">전역 복귀</button>
+      </div>
+      <div class="t">역할 필터</div>
+      <div class="row" id="roles"></div>
+      <div class="t">시간축</div>
+      <div class="row">
+        <button data-act="t0">2026-07-01</button>
+        <button data-act="t1">2026-09-20 소등</button>
+        <button data-act="t2">2026-12-01</button>
+      </div>
+      <div class="t">대체 시설 호</div>
+      <div class="row">
+        <button data-act="alt">호 그리기</button>
+        <button data-act="altoff">호 지우기</button>
+      </div>
+      <div class="t">특보</div>
+      <div class="row">
+        <button data-act="h-none">없음</button>
+        <button data-act="h-cold">한파</button>
+        <button data-act="h-rain">호우</button>
+        <button data-act="h-tsunami">해일</button>
+      </div>
+      <div class="t">태양</div>
+      <div class="row">
+        <button data-act="sun-dawn">07:10</button>
+        <button data-act="sun-day">12:00</button>
+        <button data-act="sun-dusk">16:40</button>
+        <button data-act="ao">AO 전환</button>
+      </div>
+      <div class="t">사양 등급</div>
+      <div class="row">
+        <button data-act="q-auto">auto</button>
+        <button data-act="q-high">high</button>
+        <button data-act="q-medium">medium</button>
+        <button data-act="q-low">low</button>
+        <button data-act="q-info">판정 근거</button>
+      </div>
+      <div class="t">건물 층 분리</div>
+      <div class="row">
+        <button data-act="x-tall">층 많은 시설</button>
+        <button data-act="x-base">지하 단서 시설</button>
+        <button data-act="x-last">고른 건물 층 분리</button>
+        <button data-act="x-off">다시 합치기</button>
+      </div>
+      <div class="t">보기와 대표 이미지</div>
+      <div class="row">
+        <button data-act="v-3d">3D 보기</button>
+        <button data-act="v-2d">2D 보기</button>
+        <button data-act="thumb">대표 이미지</button>
+      </div>
+      <img id="thumb" alt="" style="display:none;width:244px;border-radius:8px" />
+    </div>
+    <div id="out">준비 중</div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "rewrites": [{ "source": "/((?!api/).*)", "destination": "/index.html" }],
+  "functions": {
+    "api/hwpx.js": { "excludeFiles": "node_modules/{onnxruntime-node,onnxruntime-web,@huggingface,@img,sharp,@hyzyla,pdfjs-dist}/**" },
+    "api/parse.js": { "excludeFiles": "node_modules/{onnxruntime-node,onnxruntime-web,@huggingface,@img,sharp,@hyzyla}/**" }
+  }
+}

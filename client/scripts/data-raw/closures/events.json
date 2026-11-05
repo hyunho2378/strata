@@ -1,0 +1,26 @@
+{
+  "note": "동해시 공공시설 공사와 휴관 사례. 조사일 2026-10-18. 기간이 확인 안 된 항목은 start/end를 비우고 status를 '공고'로 둔다.",
+  "events": [
+    {"facility":"동해문화예술회관","kind":"휴관","cause":"노후배관과 천정텍스 교체공사","start":"2026-03-24","end":"2026-05-22","status":"확인","source":"동해시 공사알림 2026-03-18","url":"https://www.dh.go.kr/www/selectBbsNttView.do?key=476&bbsNo=86&nttNo=200306"},
+    {"facility":"동해국민체육센터","kind":"휴관","cause":"다목적체육관 마루바닥 전면 교체","start":"2026-03-03","end":"2026-06-30","status":"확인","source":"뉴스핌 2026-04-01","url":"https://www.newspim.com/news/view/20260401000985"},
+    {"facility":"동해웰빙레포츠타운","kind":"휴관","cause":"제61회 도민체전 대회 전용","start":"2026-06-11","end":"2026-06-16","status":"확인","source":"삼척동해조은뉴스","url":"http://sdgoodnews.co.kr/news/view.php?no=44597"},
+    {"facility":"발한도서관","kind":"휴관","cause":"노후시설 개보수","start":"2025-06-09","end":"2025-07-31","status":"확인","source":"강원신문 2025-05","url":"https://www.gwnews.org/news/articleView.html?idxno=257103"},
+    {"facility":"동해교육도서관","kind":"휴관","cause":"냉난방기와 조명 교체","start":"2026-09-14","end":"2026-11-18","status":"확인(연도는 공지 게시일 기준)","source":"도서관 공지 2026-09-03","url":"https://lib.gwe.go.kr/dhlib/menu/3050/board/330/post/35137"},
+    {"facility":"해오름스포츠센터","kind":"휴관","cause":"수영장 용수 교체","start":"2025-07-12","end":"2025-07-18","status":"확인","source":"뉴시스 2025-07-10","url":"https://www.newsis.com/view/NISX20250710_0003247137"},
+    {"facility":"봉오경로당","kind":"공사","cause":"그린리모델링(건축, 기계)","notice":"2026-07-10","status":"공고","source":"모두입찰 R26BK01627219","url":"https://www.modoobid.co.kr/bid/org/강원특별자치도%20동해시"},
+    {"facility":"동호경로당","kind":"공사","cause":"그린리모델링(건축)","notice":"2026-07-16","days":60,"status":"공고","source":"동해시 공고 제2026-933호","url":"https://contech.ai.kr/bid/6a58a2460689461f7c3703f6"},
+    {"facility":"가원경로당","kind":"공사","cause":"그린리모델링(건축)","notice":"2026-07-30","status":"공고","source":"모두입찰 R26BK01658997","url":"https://www.modoobid.co.kr/bid/org/강원특별자치도%20동해시"},
+    {"facility":"이로경로당","kind":"공사","cause":"그린리모델링(건축, 기계)","notice":"2026-07-30","status":"공고","source":"동해시 공고 제2026-972호","url":"https://contech.ai.kr/bid/6a6b1748ee6f62f9fe027c95"},
+    {"facility":"동막경로당","kind":"공사","cause":"그린리모델링(건축, 기계, 전기)","notice":"2026-08-04","days":90,"status":"공고","source":"비드프로 동막","url":"https://www.bidpro.co.kr/n0_ipchal/konggo/sisul/konggo_view.asp?num=3812866"},
+    {"facility":"지흥경로당","kind":"공사","cause":"그린리모델링(건축)","notice":"2026-08-07","status":"공고","source":"모두입찰 R26BK01672335","url":"https://www.modoobid.co.kr/bid/org/강원특별자치도%20동해시"},
+    {"facility":"신흥경로당","kind":"공사","cause":"그린리모델링(건축)","notice":"2026-08-31","status":"공고","source":"모두입찰 R26BK01705270","url":"https://www.modoobid.co.kr/bid/org/강원특별자치도%20동해시"},
+    {"facility":"향로경로당","kind":"공사","cause":"그린리모델링(건축, 기계)","notice":"2026-08-31","status":"공고","source":"모두입찰 R26BK01705306","url":"https://www.modoobid.co.kr/bid/org/강원특별자치도%20동해시"},
+    {"facility":"골말경로당","kind":"공사","cause":"그린리모델링(건축, 기계)","notice":"2026-08-31","status":"공고","source":"모두입찰 R26BK01705329","url":"https://www.modoobid.co.kr/bid/org/강원특별자치도%20동해시"},
+    {"facility":"심곡경로당","kind":"공사","cause":"그린리모델링(건축, 기계, 전기)","notice":"2026-08-31","status":"공고","source":"모두입찰 R26BK01705353","url":"https://www.modoobid.co.kr/bid/org/강원특별자치도%20동해시"},
+    {"facility":"대원곡경로당","kind":"공사","cause":"그린리모델링(건축)","notice":"2026-08-31","status":"공고","source":"모두입찰 R26BK01705391","url":"https://www.modoobid.co.kr/bid/org/강원특별자치도%20동해시"},
+    {"facility":"사문경로당","kind":"공사","cause":"그린리모델링(건축)","notice":"2026-08-31","status":"공고","source":"모두입찰 R26BK01705429","url":"https://www.modoobid.co.kr/bid/org/강원특별자치도%20동해시"},
+    {"facility":"묵호경로당","kind":"공사","cause":"그린리모델링(건축, 기계)","notice":"2026-08-31","status":"공고","source":"모두입찰 R26BK01705471","url":"https://www.modoobid.co.kr/bid/2608C01705471000/2026"},
+    {"facility":"발한경로당","kind":"공사","cause":"그린리모델링(건축)","notice":"2026-08-31","days":60,"status":"공고","source":"동해시 공고 제2026-1104호","url":"https://www.bidpro.co.kr/n0_ipchal/konggo/sisul/konggo_view.asp?num=3822090"},
+    {"facility":"승지경로당","kind":"공사","cause":"그린리모델링(건축)","notice":"2026-08-31","status":"공고","source":"모두입찰 R26BK01704860","url":"https://www.modoobid.co.kr/bid/org/강원특별자치도%20동해시"}
+  ]
+}

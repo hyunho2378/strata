@@ -1,0 +1,181 @@
+/* UI.md 토큰 반영 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* DESIGN_DELTA.md 변경 4. tokens.motion 과 1:1. CSS 애니메이션이 이 변수만 본다 */
+  :root {
+    --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+    --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+    --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+    --ease-spring: cubic-bezier(0.32, 1.32, 0.5, 1);
+    --dur-press: 120ms;
+    --dur-fast: 160ms;
+    --dur-pop: 180ms;
+    --dur: 280ms;
+    --dur-sheet: 360ms;
+  }
+
+  html { font-family: 'Pretendard GOV Variable', 'Pretendard GOV', 'Pretendard Variable', sans-serif; -webkit-font-smoothing: antialiased; }
+  body { @apply bg-page text-text-pri; letter-spacing: -0.01em; }
+  h1, h2, h3, h4 { letter-spacing: -0.02em; line-height: 1.2; text-wrap: balance; }
+  p, li, dd, figcaption { text-wrap: pretty; }
+  *:focus { outline: none; }
+  *:focus-visible { outline: 2px solid theme('colors.primary.DEFAULT'); outline-offset: 2px; border-radius: 4px; }
+  /* 전역 가로 스크롤 차단. clip 은 hidden 과 달리 스크롤 컨테이너를 만들지 않아 sticky 가 살아 있다 */
+  html, body { overflow-x: clip; }
+
+  /* 시스템 UI 금지: 운영체제 기본 모양이 나오는 입력 요소를 모두 디자인 시스템 모양으로 그린다.
+     UI.md 0장: 테두리 없이 면 색으로만 상태를 낸다 */
+  input[type='checkbox'], input[type='radio'] {
+    appearance: none; -webkit-appearance: none; margin: 0; flex-shrink: 0; cursor: pointer;
+    width: 20px; height: 20px; background: theme('colors.mute');
+    display: inline-grid; place-content: center; transition: background-color var(--dur-fast);
+  }
+  input[type='checkbox'] { border-radius: 4px; }
+  /* 동그라미는 라디오 단추의 모양 자체라 예외로 원형을 쓴다 */
+  input[type='radio'] { border-radius: 9999px; }
+  input[type='checkbox']:hover, input[type='radio']:hover { background-color: theme('colors.line.def'); }
+  input[type='checkbox']:checked { background: theme('colors.primary.DEFAULT') url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3.5 8.5l3 3 6-7' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/14px no-repeat; }
+  input[type='checkbox']:indeterminate { background: theme('colors.primary.DEFAULT') url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 8h8' stroke='%23fff' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") center/14px no-repeat; }
+  input[type='radio']:checked { background: theme('colors.primary.DEFAULT'); }
+  input[type='radio']:checked::after { content: ''; width: 8px; height: 8px; border-radius: 9999px; background: theme('colors.page'); }
+  input[type='checkbox']:disabled, input[type='radio']:disabled { opacity: .4; cursor: not-allowed; }
+
+  input[type='range'] { appearance: none; -webkit-appearance: none; background: transparent; height: 20px; cursor: pointer; }
+  input[type='range']::-webkit-slider-runnable-track { height: 6px; border-radius: 4px; background: theme('colors.mute'); }
+  input[type='range']::-moz-range-track { height: 6px; border-radius: 4px; background: theme('colors.mute'); }
+  input[type='range']::-webkit-slider-thumb { -webkit-appearance: none; width: 16px; height: 16px; margin-top: -5px; border-radius: 4px; background: theme('colors.primary.DEFAULT'); }
+  input[type='range']::-moz-range-thumb { width: 16px; height: 16px; border-radius: 4px; background: theme('colors.primary.DEFAULT'); }
+  input[type='range']::-moz-range-progress { height: 6px; border-radius: 4px; background: theme('colors.primary.DEFAULT'); }
+
+  input[type='number'] { -moz-appearance: textfield; appearance: textfield; }
+  input[type='number']::-webkit-inner-spin-button, input[type='number']::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+  input[type='search']::-webkit-search-cancel-button, input[type='search']::-webkit-search-decoration { -webkit-appearance: none; }
+  input::-webkit-calendar-picker-indicator, input::-webkit-list-button { display: none !important; }
+  input:-webkit-autofill { -webkit-box-shadow: 0 0 0 40px #fff inset; -webkit-text-fill-color: theme('colors.text.pri'); }
+  ::selection { background: theme('colors.primary.soft'); color: theme('colors.text.pri'); }
+
+  /* 스크롤바: 얇은 회색 막대(운영체제 기본 굵은 막대 대신) */
+  * { scrollbar-width: thin; scrollbar-color: theme('colors.line.strong') transparent; }
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: theme('colors.line.def'); border-radius: 9999px; border: 3px solid transparent; background-clip: content-box; }
+  ::-webkit-scrollbar-thumb:hover { background: theme('colors.line.strong'); background-clip: content-box; }
+  ::-webkit-scrollbar-corner { background: transparent; }
+  /* 스크롤바가 생기고 없어질 때 화면이 좌우로 밀리지 않게 자리를 늘 비워 둔다 */
+  .admin-surface, .scroll-stable { scrollbar-gutter: stable; }
+  /* 가로로 넘기는 도구줄은 막대 없이(밀어서 넘김) */
+  .no-scrollbar { scrollbar-width: none; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+}
+
+@layer components {
+  /* tokens.typography 와 1:1. 굵기 사다리 400 / 600 / 700 / 800. 500 은 쓰지 않는다(UI_PLAYBOOK 2.2) */
+  /* KRDS 글자 스케일 전사(style_03 타이포그래피). 굵기 400, 700 두 가지. 줄 간격 150% 이상.
+     display small 36/28, heading large 32/24, medium 24/22, small 19, xsmall 17, body medium 17, small 15, xsmall 13 */
+  .type-display { font-size: clamp(28px, 1.6vw + 19px, 36px); font-weight: 700; letter-spacing: -0.01em; line-height: 1.4; }
+  .type-h1      { font-size: clamp(24px, 1.1vw + 18px, 32px); font-weight: 700; letter-spacing: -0.01em; line-height: 1.4; }
+  .type-h2      { font-size: clamp(22px, 0.3vw + 20px, 24px); font-weight: 700; letter-spacing: -0.005em; line-height: 1.5; }
+  .type-h3      { font-size: 19px; font-weight: 700; line-height: 1.5; }
+  .type-kpi     { font-size: clamp(32px, 1.1vw + 26px, 40px); font-weight: 700; letter-spacing: -0.01em; line-height: 1.2; font-variant-numeric: tabular-nums; }
+  .type-body    { font-size: 17px; font-weight: 400; line-height: 1.5; }
+  .type-body-sm { font-size: 15px; font-weight: 400; line-height: 1.5; }
+  .type-caption { font-size: 13px; font-weight: 700; line-height: 1.5; }
+  /* 강조 텍스트. body small-bold, medium-bold */
+  .type-strong      { font-size: 15px; font-weight: 700; line-height: 1.5; }
+  .type-body-strong { font-size: 17px; font-weight: 700; line-height: 1.5; }
+  .type-meta    { font-size: 13px; font-weight: 400; line-height: 1.5; }
+  .type-count   { font-size: 11px; font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; }
+
+  /* DESIGN_DELTA.md 변경 4. press 피드백. 버튼 칩 클릭 카드에 붙인다.
+     transition 을 여기서 통째로 선언한다. 컴포넌트가 transition-[...] 유틸을 또 붙이면
+     그 유틸이 transition-property 를 덮어써 transform 이 안 움직인다 */
+  .pressable {
+    transition-property: transform, background-color, color, box-shadow;
+    transition-duration: var(--dur-press);
+    transition-timing-function: var(--ease-out);
+  }
+  .pressable:active { transform: scale(0.96); }
+  .pressable:disabled:active, .pressable[aria-disabled='true']:active { transform: none; }
+
+  /* 팝 진입 퇴장. 드롭다운 Select LangSwitch 공용. usePopExit 훅과 짝 */
+  /* UI.md 7장. 포커스 표시 방법은 하나다. 안쪽 요소가 포커스를 받는데 바깥 면이 보여야 하면 이 클래스를 붙인다 */
+  .focus-ring-within:focus-within { outline: 2px solid theme('colors.primary.DEFAULT'); outline-offset: 2px; }
+
+  .pop-panel { animation: popPanel var(--dur-pop) var(--ease-out); transform-origin: top; }
+  .pop-panel-exit { animation: popPanel var(--dur-pop) var(--ease-out) reverse forwards; }
+  .pop-instant { animation: none; }
+}
+
+@keyframes flowDown { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideInRight { from { transform: translateX(100%); } to { transform: translateX(0); } }
+@keyframes slideInLeft { from { transform: translateX(-100%); } to { transform: translateX(0); } }
+@keyframes popIn { from { opacity: 0; transform: scale(0.98); } to { opacity: 1; transform: scale(1); } }
+@keyframes popPanel { from { opacity: 0; transform: scale(0.97); } to { opacity: 1; transform: scale(1); } }
+@keyframes pageEnter { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes skeleton { 0%, 100% { background-color: theme('colors.line.def'); } 50% { background-color: theme('colors.text.ter'); } }
+@keyframes caretBlink { 0%, 45% { opacity: 1; } 50%, 95% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes toastOut { to { opacity: 0; transform: translateY(-6px); } }
+
+.animate-flow-down { animation: flowDown var(--dur) var(--ease-out); }
+.animate-flow-down-late { animation: flowDown var(--dur) var(--ease-out) 80ms backwards; }
+.animate-fade-in { animation: fadeIn var(--dur-fast) var(--ease-out); }
+.animate-slide-in-right { animation: slideInRight var(--dur-sheet) var(--ease-drawer); }
+.animate-slide-in-left { animation: slideInLeft var(--dur-sheet) var(--ease-drawer); }
+.animate-pop-in { animation: popIn var(--dur-pop) var(--ease-out); }
+.page-enter { animation: pageEnter var(--dur) var(--ease-out); }
+.skeleton-bar { animation: skeleton 1.4s ease-in-out infinite; }
+/* 시트 딤은 패널과 같은 시간으로 떠야 층이 같이 움직인다 */
+.animate-fade-in-sheet { animation: fadeIn var(--dur-sheet) var(--ease-drawer); }
+/* 스트리밍 커서. 스트리밍 동안만 존재하는 상태 표시다. 장식이 아니라 reduced-motion 에서는 아예 지운다 */
+.stream-caret { animation: caretBlink 1s steps(1) infinite; }
+/* 토스트는 들어올 때 흘러들고 사라지기 직전에 스스로 빠진다. 스토어가 4초 뒤 제거한다 */
+.toast-item { animation: flowDown var(--dur-pop) var(--ease-out), toastOut var(--dur-fast) var(--ease-out) 3720ms forwards; }
+.skeleton-bar-2 { animation-delay: 0.18s; }
+.skeleton-bar-3 { animation-delay: 0.36s; }
+
+/* word-break: keep-all(break-keep)은 한국어 어절을 안 끊으려는 규칙이다.
+   일본어 중국어는 낱말 사이에 공백이 없어 그대로 두면 줄이 아예 안 바뀌고 컨테이너를 넘친다.
+   두 언어에서만 일반 줄바꿈으로 되돌린다(7단계) */
+html[lang='ja'] .break-keep, html[lang='zh'] .break-keep { word-break: normal; line-break: strict; }
+
+/* tokens.contrastOverrides. 컴포넌트가 CSS 변수를 쓰지 않으므로 유틸리티 재정의로 최소 적용한다 */
+@media (prefers-contrast: more) {
+  .bg-line-sub { background-color: theme('colors.line.def'); }
+  .text-text-meta { color: theme('colors.text.sec'); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  .pressable:active { transform: none; }
+  /* 깜빡이는 커서는 줄이는 게 아니라 없앤다 */
+  .stream-caret { display: none; }
+  /* 토스트가 순간 사라지지 않게 퇴장 애니메이션만 끈다 */
+  .toast-item { animation: none; }
+}
+
+/* 문서함 문서 편집기 종이 */
+.doc-page { font-size: 15px; line-height: 1.75; color: theme('colors.text.pri'); }
+.doc-page h1 { font-size: 26px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.3; margin: 0 0 16px; }
+.doc-page h2 { font-size: 19px; font-weight: 700; letter-spacing: -0.01em; margin: 28px 0 8px; }
+.doc-page p { margin: 0 0 8px; }
+.doc-page ul, .doc-page ol { margin: 0 0 8px; padding-left: 24px; }
+.doc-page ul { list-style: disc; }
+.doc-page ol { list-style: decimal; }
+.doc-page a { color: theme('colors.primary.DEFAULT'); text-decoration: underline; }
+
+/* 명부 서식 출력(RosterPrint). 인쇄 때 이 영역만 남기고 마을마다 쪽을 나눈다 */
+@media print {
+  body * { visibility: hidden; }
+  .print-area, .print-area * { visibility: visible; }
+  .print-area { position: absolute; left: 0; top: 0; width: 100%; }
+  .print-page { break-after: page; }
+}
+
+/* 표 격자와 눈금자 전용 1px 면. UI.md 0장의 유일한 예외다.
+   테두리 속성이 아니라 면 색 띄라 장식으로 번지지 않는다 */
+.rule-line { background-color: theme('colors.line.def'); }
+.grid-line { background-color: theme('colors.line.sub'); }

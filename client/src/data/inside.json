@@ -1,0 +1,219 @@
+{
+ "generatedAt": "2026-10-19T00:00:00+09:00",
+ "note": "단면 투시도 이미지가 준비되면 polygon을 채운다.",
+ "facilities": [
+  {
+   "facilityId": "F188",
+   "name": "동해초등학교",
+   "image": "/inside/F188.webp",
+   "spaces": [
+    {
+     "id": "hall",
+     "label": "현관과 로비",
+     "roles": [
+      "care"
+     ],
+     "polygon": []
+    },
+    {
+     "id": "gym",
+     "label": "체육관",
+     "roles": [
+      "sports",
+      "evac"
+     ],
+     "polygon": []
+    },
+    {
+     "id": "class-1f",
+     "label": "1층 교실",
+     "roles": [
+      "care"
+     ],
+     "polygon": []
+    },
+    {
+     "id": "yard",
+     "label": "운동장",
+     "roles": [
+      "evac"
+     ],
+     "polygon": []
+    },
+    {
+     "id": "shelter-room",
+     "label": "임시주거 지정 공간",
+     "roles": [
+      "housing"
+     ],
+     "polygon": []
+    }
+   ]
+  },
+  {
+   "facilityId": "F181",
+   "name": "동해웰빙레포츠타운",
+   "image": "/inside/F181.webp",
+   "spaces": [
+    {
+     "id": "main-gym",
+     "label": "주경기장",
+     "roles": [
+      "sports"
+     ],
+     "polygon": []
+    },
+    {
+     "id": "sub-field",
+     "label": "보조경기장",
+     "roles": [
+      "sports"
+     ],
+     "polygon": []
+    },
+    {
+     "id": "field",
+     "label": "운동장",
+     "roles": [
+      "evac"
+     ],
+     "polygon": []
+    },
+    {
+     "id": "lobby",
+     "label": "입구 로비",
+     "roles": [
+      "admin"
+     ],
+     "polygon": []
+    },
+    {
+     "id": "water-point",
+     "label": "비상급수 지점",
+     "roles": [
+      "water"
+     ],
+     "polygon": []
+    }
+   ]
+  },
+  {
+   "facilityId": "F001",
+   "name": "이로경로당",
+   "image": "/inside/F001.webp",
+   "spaces": [
+    {
+     "id": "main-room",
+     "label": "큰방",
+     "roles": [
+      "shelter",
+      "care"
+     ],
+     "polygon": []
+    },
+    {
+     "id": "kitchen",
+     "label": "주방",
+     "roles": [
+      "care"
+     ],
+     "polygon": []
+    },
+    {
+     "id": "rest",
+     "label": "휴게실",
+     "roles": [
+      "shelter"
+     ],
+     "polygon": []
+    },
+    {
+     "id": "entry",
+     "label": "현관",
+     "roles": [
+      "admin"
+     ],
+     "polygon": []
+    }
+   ]
+  },
+  {
+   "facilityId": "F176",
+   "name": "묵호동행정복지센터",
+   "image": "/inside/F176.webp",
+   "spaces": [
+    {
+     "id": "office-1f",
+     "label": "1층 민원 창구",
+     "roles": [
+      "admin"
+     ],
+     "polygon": []
+    },
+    {
+     "id": "meeting",
+     "label": "회의실",
+     "roles": [
+      "care"
+     ],
+     "polygon": []
+    },
+    {
+     "id": "b1-shelter",
+     "label": "지하 1층 민방위대피 공간",
+     "roles": [
+      "evac"
+     ],
+     "polygon": []
+    },
+    {
+     "id": "b1-store",
+     "label": "지하 1층 비축 공간",
+     "roles": [
+      "housing"
+     ],
+     "polygon": []
+    }
+   ]
+  },
+  {
+   "facilityId": "F157",
+   "name": "근로복지공단 동해병원",
+   "image": "/inside/F157.webp",
+   "spaces": [
+    {
+     "id": "er",
+     "label": "응급실",
+     "roles": [
+      "medical"
+     ],
+     "polygon": []
+    },
+    {
+     "id": "er-entry",
+     "label": "응급 출입구",
+     "roles": [
+      "medical"
+     ],
+     "polygon": []
+    },
+    {
+     "id": "outpatient",
+     "label": "외래 접수",
+     "roles": [
+      "medical"
+     ],
+     "polygon": []
+    },
+    {
+     "id": "pharmacy",
+     "label": "원내 약제실",
+     "roles": [
+      "medical"
+     ],
+     "polygon": []
+    }
+   ]
+  }
+ ]
+}

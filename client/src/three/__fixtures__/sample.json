@@ -1,0 +1,5305 @@
+{
+ "generatedAt": "2026-10-19T00:00:00+09:00",
+ "basis": "자료 기준일 2026년 10월 18일. 운영 중단 일정의 추정값은 공고일 기준이며 확정 일자와 구분한다. (three 담당 시험용 발췌본)",
+ "sources": [
+  {
+   "id": "safekorea",
+   "label": "국민안전24 안전지도(동해시 51170) 17개 시설 층",
+   "date": "2026. 10. 18."
+  },
+  {
+   "id": "kyungro",
+   "label": "전국마을회관및경로당표준데이터(공공데이터포털 15114136)",
+   "date": "2025. 11. 4."
+  },
+  {
+   "id": "gwe-school",
+   "label": "강원특별자치도교육청 학교현황(동해시)",
+   "date": "2026. 10. 19."
+  },
+  {
+   "id": "dhsisul",
+   "label": "동해시시설관리공단 관리시설안내 체육시설",
+   "date": "2026. 10. 19."
+  },
+  {
+   "id": "closures",
+   "label": "동해시 공사알림과 나라장터 공고와 지역 언론 휴관 사례",
+   "date": "2026. 10. 18."
+  },
+  {
+   "id": "dh-banner",
+   "label": "동해시 누리집 응급실 미운영 안내 배너",
+   "date": "2026. 10."
+  },
+  {
+   "id": "dem",
+   "label": "지형 고도 격자 client/public/terrain/region-dem.png",
+   "date": "2026. 10. 7."
+  }
+ ],
+ "roles": [
+  {
+   "id": "shelter",
+   "label": "쉼터"
+  },
+  {
+   "id": "evac",
+   "label": "대피"
+  },
+  {
+   "id": "housing",
+   "label": "임시주거"
+  },
+  {
+   "id": "water",
+   "label": "급수"
+  },
+  {
+   "id": "medical",
+   "label": "응급"
+  },
+  {
+   "id": "sports",
+   "label": "체육"
+  },
+  {
+   "id": "care",
+   "label": "돌봄"
+  },
+  {
+   "id": "admin",
+   "label": "행정"
+  },
+  {
+   "id": "transit",
+   "label": "통행"
+  }
+ ],
+ "facilities": [
+  {
+   "id": "F001",
+   "name": "이로경로당",
+   "type": "경로당",
+   "lon": 129.0560678,
+   "lat": 37.4929538,
+   "addr": "강원특별자치도 동해시 월평로 47-1",
+   "dong": "이로동",
+   "roles": [
+    {
+     "role": "shelter",
+     "sub": "cold",
+     "subLabel": "한파쉼터",
+     "cap": 30,
+     "area": 295.23,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-01-21",
+     "season": "20241115~20250315",
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "heat",
+     "subLabel": "무더위쉼터",
+     "cap": 30,
+     "area": 295.23,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-03-09",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "senior",
+     "subLabel": "어르신 모임",
+     "cap": null,
+     "area": 295,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "kyungro"
+    }
+   ],
+   "status": "check",
+   "events": [
+    {
+     "id": "E010",
+     "kind": "공사",
+     "cause": "그린리모델링(건축, 기계)",
+     "notice": "2026-07-30",
+     "start": "2026-08-29",
+     "end": "2026-10-28",
+     "certainty": "예정",
+     "roles": [
+      "shelter",
+      "care"
+     ],
+     "source": "동해시 공고 제2026-972호",
+     "url": "https://contech.ai.kr/bid/6a6b1748ee6f62f9fe027c95"
+    }
+   ],
+   "alternatives": [
+    {
+     "role": "shelter",
+     "facilityId": "F002",
+     "distM": 433,
+     "climbM": 10
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F008",
+     "distM": 829,
+     "climbM": 11
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F002",
+     "distM": 433,
+     "climbM": 10
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F008",
+     "distM": 829,
+     "climbM": 11
+    },
+    {
+     "role": "care",
+     "facilityId": "F002",
+     "distM": 433,
+     "climbM": 10
+    },
+    {
+     "role": "care",
+     "facilityId": "F008",
+     "distM": 829,
+     "climbM": 11
+    }
+   ]
+  },
+  {
+   "id": "F002",
+   "name": "월평경로당",
+   "type": "경로당",
+   "lon": 129.0523299,
+   "lat": 37.4954822,
+   "addr": "강원특별자치도 동해시 효자로 94-4",
+   "dong": "이로동",
+   "roles": [
+    {
+     "role": "shelter",
+     "sub": "cold",
+     "subLabel": "한파쉼터",
+     "cap": 20,
+     "area": 110.72,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-01-21",
+     "season": "20241115~20250315",
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "heat",
+     "subLabel": "무더위쉼터",
+     "cap": 20,
+     "area": 110.72,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-03-09",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "senior",
+     "subLabel": "어르신 모임",
+     "cap": null,
+     "area": 111,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "kyungro"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": [
+    {
+     "role": "shelter",
+     "facilityId": "F008",
+     "distM": 407,
+     "climbM": 3
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F001",
+     "distM": 433,
+     "climbM": 0
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F008",
+     "distM": 407,
+     "climbM": 3
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F001",
+     "distM": 433,
+     "climbM": 0
+    },
+    {
+     "role": "care",
+     "facilityId": "F008",
+     "distM": 407,
+     "climbM": 3
+    },
+    {
+     "role": "care",
+     "facilityId": "F001",
+     "distM": 433,
+     "climbM": 0
+    }
+   ]
+  },
+  {
+   "id": "F003",
+   "name": "동막경로당",
+   "type": "경로당",
+   "lon": 129.0683098,
+   "lat": 37.4906784,
+   "addr": "강원특별자치도 동해시 효자로 243-3",
+   "dong": "이로동",
+   "roles": [
+    {
+     "role": "shelter",
+     "sub": "cold",
+     "subLabel": "한파쉼터",
+     "cap": 25,
+     "area": 191.8,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-01-21",
+     "season": "20241115~20250315",
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "heat",
+     "subLabel": "무더위쉼터",
+     "cap": 25,
+     "area": 191.8,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-03-09",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "senior",
+     "subLabel": "어르신 모임",
+     "cap": null,
+     "area": 192,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "kyungro"
+    }
+   ],
+   "status": "check",
+   "events": [
+    {
+     "id": "E011",
+     "kind": "공사",
+     "cause": "그린리모델링(건축, 기계, 전기)",
+     "notice": "2026-08-04",
+     "start": "2026-09-03",
+     "end": "2026-12-02",
+     "certainty": "예정",
+     "roles": [
+      "shelter",
+      "care"
+     ],
+     "source": "비드프로 동막",
+     "url": "https://www.bidpro.co.kr/n0_ipchal/konggo/sisul/konggo_view.asp?num=3812866"
+    }
+   ],
+   "alternatives": []
+  },
+  {
+   "id": "F009",
+   "name": "승지경로당",
+   "type": "경로당",
+   "lon": 129.0753572,
+   "lat": 37.5392413,
+   "addr": "강원특별자치도 동해시 승지로 266",
+   "dong": "부곡동",
+   "roles": [
+    {
+     "role": "shelter",
+     "sub": "cold",
+     "subLabel": "한파쉼터",
+     "cap": 15,
+     "area": 85.7,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-01-21",
+     "season": "20241115~20250315",
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "heat",
+     "subLabel": "무더위쉼터",
+     "cap": 15,
+     "area": 85.7,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-03-09",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "senior",
+     "subLabel": "어르신 모임",
+     "cap": null,
+     "area": 86,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "kyungro"
+    }
+   ],
+   "status": "check",
+   "events": [
+    {
+     "id": "E021",
+     "kind": "공사",
+     "cause": "그린리모델링(건축)",
+     "notice": "2026-08-31",
+     "start": "2026-09-30",
+     "end": "2026-11-29",
+     "certainty": "예정",
+     "roles": [
+      "shelter",
+      "care"
+     ],
+     "source": "모두입찰 R26BK01704860",
+     "url": "https://www.modoobid.co.kr/bid/org/강원특별자치도%20동해시"
+    }
+   ],
+   "alternatives": [
+    {
+     "role": "shelter",
+     "facilityId": "F147",
+     "distM": 2137,
+     "climbM": 55
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F147",
+     "distM": 2137,
+     "climbM": 55
+    },
+    {
+     "role": "care",
+     "facilityId": "F147",
+     "distM": 2137,
+     "climbM": 55
+    }
+   ]
+  },
+  {
+   "id": "F020",
+   "name": "지흥경로당",
+   "type": "경로당",
+   "lon": 129.0984589,
+   "lat": 37.4981717,
+   "addr": "강원특별자치도 동해시 지양길 112 (지흥동)",
+   "dong": "지흥동",
+   "roles": [
+    {
+     "role": "shelter",
+     "sub": "cold",
+     "subLabel": "한파쉼터",
+     "cap": 20,
+     "area": 105.48,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-01-21",
+     "season": "20241115~20250315",
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "heat",
+     "subLabel": "무더위쉼터",
+     "cap": 20,
+     "area": 105.48,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-03-09",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "senior",
+     "subLabel": "어르신 모임",
+     "cap": null,
+     "area": 105,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "kyungro"
+    }
+   ],
+   "status": "check",
+   "events": [
+    {
+     "id": "E012",
+     "kind": "공사",
+     "cause": "그린리모델링(건축)",
+     "notice": "2026-08-07",
+     "start": "2026-09-06",
+     "end": "2026-11-05",
+     "certainty": "예정",
+     "roles": [
+      "shelter",
+      "care"
+     ],
+     "source": "모두입찰 R26BK01672335",
+     "url": "https://www.modoobid.co.kr/bid/org/강원특별자치도%20동해시"
+    }
+   ],
+   "alternatives": [
+    {
+     "role": "shelter",
+     "facilityId": "F021",
+     "distM": 546,
+     "climbM": 52
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F021",
+     "distM": 546,
+     "climbM": 52
+    },
+    {
+     "role": "care",
+     "facilityId": "F021",
+     "distM": 546,
+     "climbM": 52
+    }
+   ]
+  },
+  {
+   "id": "F036",
+   "name": "봉오경로당",
+   "type": "경로당",
+   "lon": 129.1208558,
+   "lat": 37.5107129,
+   "addr": "강원특별자치도 동해시 봉오주택길 20-3",
+   "dong": "용정동",
+   "roles": [
+    {
+     "role": "shelter",
+     "sub": "cold",
+     "subLabel": "한파쉼터",
+     "cap": 25,
+     "area": 242.24,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-01-21",
+     "season": "20241115~20250315",
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "heat",
+     "subLabel": "무더위쉼터",
+     "cap": 25,
+     "area": 242.24,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-03-09",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "senior",
+     "subLabel": "어르신 모임",
+     "cap": null,
+     "area": 242,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "kyungro"
+    }
+   ],
+   "status": "check",
+   "events": [
+    {
+     "id": "E007",
+     "kind": "공사",
+     "cause": "그린리모델링(건축, 기계)",
+     "notice": "2026-07-10",
+     "start": "2026-08-09",
+     "end": "2026-10-08",
+     "certainty": "예정",
+     "roles": [
+      "shelter",
+      "care"
+     ],
+     "source": "모두입찰 R26BK01627219",
+     "url": "https://www.modoobid.co.kr/bid/org/강원특별자치도%20동해시"
+    }
+   ],
+   "alternatives": []
+  },
+  {
+   "id": "F059",
+   "name": "묵호경로당",
+   "type": "경로당",
+   "lon": 129.11544,
+   "lat": 37.552654,
+   "addr": "강원특별자치도 동해시 묵호시장길 27 (묵호진동)",
+   "dong": "묵호진동",
+   "roles": [
+    {
+     "role": "shelter",
+     "sub": "cold",
+     "subLabel": "한파쉼터",
+     "cap": 25,
+     "area": 162.08,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-05-11",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "heat",
+     "subLabel": "무더위쉼터",
+     "cap": 25,
+     "area": 162.08,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-05-11",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "senior",
+     "subLabel": "어르신 모임",
+     "cap": null,
+     "area": 162,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "kyungro"
+    }
+   ],
+   "status": "check",
+   "events": [
+    {
+     "id": "E019",
+     "kind": "공사",
+     "cause": "그린리모델링(건축, 기계)",
+     "notice": "2026-08-31",
+     "start": "2026-09-30",
+     "end": "2026-11-29",
+     "certainty": "예정",
+     "roles": [
+      "shelter",
+      "care"
+     ],
+     "source": "모두입찰 R26BK01705471",
+     "url": "https://www.modoobid.co.kr/bid/2608C01705471000/2026"
+    }
+   ],
+   "alternatives": []
+  },
+  {
+   "id": "F068",
+   "name": "가원경로당",
+   "type": "경로당",
+   "lon": 129.1087693,
+   "lat": 37.4717672,
+   "addr": "강원특별자치도 동해시 지가길 106 (지가동)",
+   "dong": "지가동",
+   "roles": [
+    {
+     "role": "shelter",
+     "sub": "cold",
+     "subLabel": "한파쉼터",
+     "cap": 15,
+     "area": 86.64,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-01-21",
+     "season": "20241115~20250315",
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "heat",
+     "subLabel": "무더위쉼터",
+     "cap": 15,
+     "area": 86.64,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-03-09",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "senior",
+     "subLabel": "어르신 모임",
+     "cap": null,
+     "area": 87,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "kyungro"
+    }
+   ],
+   "status": "check",
+   "events": [
+    {
+     "id": "E009",
+     "kind": "공사",
+     "cause": "그린리모델링(건축)",
+     "notice": "2026-07-30",
+     "start": "2026-08-29",
+     "end": "2026-10-28",
+     "certainty": "예정",
+     "roles": [
+      "shelter",
+      "care"
+     ],
+     "source": "모두입찰 R26BK01658997",
+     "url": "https://www.modoobid.co.kr/bid/org/강원특별자치도%20동해시"
+    }
+   ],
+   "alternatives": [
+    {
+     "role": "shelter",
+     "facilityId": "F018",
+     "distM": 606,
+     "climbM": 11
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F018",
+     "distM": 606,
+     "climbM": 11
+    },
+    {
+     "role": "care",
+     "facilityId": "F018",
+     "distM": 606,
+     "climbM": 11
+    }
+   ]
+  },
+  {
+   "id": "F077",
+   "name": "신흥경로당",
+   "type": "경로당",
+   "lon": 129.020997,
+   "lat": 37.5193057,
+   "addr": "강원특별자치도 동해시 서동로 825-1",
+   "dong": "신흥동",
+   "roles": [
+    {
+     "role": "shelter",
+     "sub": "cold",
+     "subLabel": "한파쉼터",
+     "cap": 25,
+     "area": 171.27,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-01-21",
+     "season": "20241115~20250315",
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "heat",
+     "subLabel": "무더위쉼터",
+     "cap": 25,
+     "area": 171.27,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-03-09",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "senior",
+     "subLabel": "어르신 모임",
+     "cap": null,
+     "area": 91,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "kyungro"
+    }
+   ],
+   "status": "check",
+   "events": [
+    {
+     "id": "E013",
+     "kind": "공사",
+     "cause": "그린리모델링(건축)",
+     "notice": "2026-08-31",
+     "start": "2026-09-30",
+     "end": "2026-11-29",
+     "certainty": "예정",
+     "roles": [
+      "shelter",
+      "care"
+     ],
+     "source": "모두입찰 R26BK01705270",
+     "url": "https://www.modoobid.co.kr/bid/org/강원특별자치도%20동해시"
+    }
+   ],
+   "alternatives": [
+    {
+     "role": "shelter",
+     "facilityId": "F008",
+     "distM": 3443,
+     "climbM": 70
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F002",
+     "distM": 3819,
+     "climbM": 94
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F008",
+     "distM": 3443,
+     "climbM": 70
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F002",
+     "distM": 3819,
+     "climbM": 94
+    },
+    {
+     "role": "care",
+     "facilityId": "F008",
+     "distM": 3443,
+     "climbM": 70
+    },
+    {
+     "role": "care",
+     "facilityId": "F002",
+     "distM": 3819,
+     "climbM": 94
+    }
+   ]
+  },
+  {
+   "id": "F095",
+   "name": "발한경로당",
+   "type": "경로당",
+   "lon": 129.1100385,
+   "lat": 37.5501908,
+   "addr": "강원특별자치도 동해시 일출로 14-1",
+   "dong": "발한동",
+   "roles": [
+    {
+     "role": "shelter",
+     "sub": "cold",
+     "subLabel": "한파쉼터",
+     "cap": 15,
+     "area": 94.4,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-04-27",
+     "season": "20241115~20250315",
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "heat",
+     "subLabel": "무더위쉼터",
+     "cap": 15,
+     "area": 94.4,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-04-27",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "dust",
+     "subLabel": "미세먼지 쉼터",
+     "cap": 73,
+     "area": null,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "senior",
+     "subLabel": "어르신 모임",
+     "cap": null,
+     "area": 94,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "kyungro"
+    }
+   ],
+   "status": "check",
+   "events": [
+    {
+     "id": "E020",
+     "kind": "공사",
+     "cause": "그린리모델링(건축)",
+     "notice": "2026-08-31",
+     "start": "2026-09-30",
+     "end": "2026-11-29",
+     "certainty": "예정",
+     "roles": [
+      "shelter",
+      "care"
+     ],
+     "source": "동해시 공고 제2026-1104호",
+     "url": "https://www.bidpro.co.kr/n0_ipchal/konggo/sisul/konggo_view.asp?num=3822090"
+    }
+   ],
+   "alternatives": [
+    {
+     "role": "shelter",
+     "facilityId": "F123",
+     "distM": 808,
+     "climbM": 32
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F131",
+     "distM": 942,
+     "climbM": 23
+    }
+   ]
+  },
+  {
+   "id": "F108",
+   "name": "향로경로당",
+   "type": "경로당",
+   "lon": 129.1051,
+   "lat": 37.5421,
+   "addr": "강원특별자치도 동해시 향로복개로 37",
+   "dong": "발한동",
+   "roles": [
+    {
+     "role": "shelter",
+     "sub": "cold",
+     "subLabel": "한파쉼터",
+     "cap": 25,
+     "area": 199.5,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-05-11",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "heat",
+     "subLabel": "무더위쉼터",
+     "cap": 25,
+     "area": 199.5,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-05-11",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "senior",
+     "subLabel": "어르신 모임",
+     "cap": null,
+     "area": 200,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "kyungro"
+    }
+   ],
+   "status": "check",
+   "events": [
+    {
+     "id": "E014",
+     "kind": "공사",
+     "cause": "그린리모델링(건축, 기계)",
+     "notice": "2026-08-31",
+     "start": "2026-09-30",
+     "end": "2026-11-29",
+     "certainty": "예정",
+     "roles": [
+      "shelter",
+      "care"
+     ],
+     "source": "모두입찰 R26BK01705306",
+     "url": "https://www.modoobid.co.kr/bid/org/강원특별자치도%20동해시"
+    }
+   ],
+   "alternatives": [
+    {
+     "role": "shelter",
+     "facilityId": "F010",
+     "distM": 403,
+     "climbM": 28
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F010",
+     "distM": 403,
+     "climbM": 28
+    },
+    {
+     "role": "care",
+     "facilityId": "F131",
+     "distM": 493,
+     "climbM": 14
+    },
+    {
+     "role": "care",
+     "facilityId": "F147",
+     "distM": 613,
+     "climbM": 16
+    }
+   ]
+  },
+  {
+   "id": "F123",
+   "name": "사문경로당",
+   "type": "경로당",
+   "lon": 129.1034076,
+   "lat": 37.5552312,
+   "addr": "강원특별자치도 동해시 해안로 619 (발한동)",
+   "dong": "발한동",
+   "roles": [
+    {
+     "role": "shelter",
+     "sub": "cold",
+     "subLabel": "한파쉼터",
+     "cap": 15,
+     "area": 94.68,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-01-21",
+     "season": "20241115~20250315",
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "heat",
+     "subLabel": "무더위쉼터",
+     "cap": 15,
+     "area": 94.68,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-03-09",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "dust",
+     "subLabel": "미세먼지 쉼터",
+     "cap": 42,
+     "area": null,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "senior",
+     "subLabel": "어르신 모임",
+     "cap": null,
+     "area": 65,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "kyungro"
+    }
+   ],
+   "status": "check",
+   "events": [
+    {
+     "id": "E018",
+     "kind": "공사",
+     "cause": "그린리모델링(건축)",
+     "notice": "2026-08-31",
+     "start": "2026-09-30",
+     "end": "2026-11-29",
+     "certainty": "예정",
+     "roles": [
+      "shelter",
+      "care"
+     ],
+     "source": "모두입찰 R26BK01705429",
+     "url": "https://www.modoobid.co.kr/bid/org/강원특별자치도%20동해시"
+    }
+   ],
+   "alternatives": [
+    {
+     "role": "shelter",
+     "facilityId": "F007",
+     "distM": 206,
+     "climbM": 8
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F007",
+     "distM": 206,
+     "climbM": 8
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F095",
+     "distM": 808,
+     "climbM": 11
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F131",
+     "distM": 1109,
+     "climbM": 18
+    }
+   ]
+  },
+  {
+   "id": "F124",
+   "name": "심곡경로당",
+   "type": "경로당",
+   "lon": 129.0848592,
+   "lat": 37.5784725,
+   "addr": "강원특별자치도 동해시 약천길 19",
+   "dong": "심곡동",
+   "roles": [
+    {
+     "role": "shelter",
+     "sub": "cold",
+     "subLabel": "한파쉼터",
+     "cap": 15,
+     "area": 78.26,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-01-21",
+     "season": "20241115~20250315",
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "heat",
+     "subLabel": "무더위쉼터",
+     "cap": 15,
+     "area": 78.26,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-03-09",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "senior",
+     "subLabel": "어르신 모임",
+     "cap": null,
+     "area": 78,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "kyungro"
+    }
+   ],
+   "status": "check",
+   "events": [
+    {
+     "id": "E016",
+     "kind": "공사",
+     "cause": "그린리모델링(건축, 기계, 전기)",
+     "notice": "2026-08-31",
+     "start": "2026-09-30",
+     "end": "2026-11-29",
+     "certainty": "예정",
+     "roles": [
+      "shelter",
+      "care"
+     ],
+     "source": "모두입찰 R26BK01705353",
+     "url": "https://www.modoobid.co.kr/bid/org/강원특별자치도%20동해시"
+    }
+   ],
+   "alternatives": [
+    {
+     "role": "shelter",
+     "facilityId": "F006",
+     "distM": 1450,
+     "climbM": 37
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F006",
+     "distM": 1450,
+     "climbM": 37
+    },
+    {
+     "role": "care",
+     "facilityId": "F006",
+     "distM": 1450,
+     "climbM": 37
+    }
+   ]
+  },
+  {
+   "id": "F131",
+   "name": "동호경로당",
+   "type": "경로당",
+   "lon": 129.1012672,
+   "lat": 37.5453429,
+   "addr": "강원특별자치도 동해시 동호4길 13 (발한동)",
+   "dong": "발한동",
+   "roles": [
+    {
+     "role": "shelter",
+     "sub": "cold",
+     "subLabel": "한파쉼터",
+     "cap": 15,
+     "area": 90.63,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-05-11",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "heat",
+     "subLabel": "무더위쉼터",
+     "cap": 15,
+     "area": 90.63,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-05-11",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "dust",
+     "subLabel": "미세먼지 쉼터",
+     "cap": 82,
+     "area": null,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "senior",
+     "subLabel": "어르신 모임",
+     "cap": null,
+     "area": 91,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "kyungro"
+    }
+   ],
+   "status": "check",
+   "events": [
+    {
+     "id": "E008",
+     "kind": "공사",
+     "cause": "그린리모델링(건축)",
+     "notice": "2026-07-16",
+     "start": "2026-08-15",
+     "end": "2026-10-14",
+     "certainty": "예정",
+     "roles": [
+      "shelter",
+      "care"
+     ],
+     "source": "동해시 공고 제2026-933호",
+     "url": "https://contech.ai.kr/bid/6a58a2460689461f7c3703f6"
+    }
+   ],
+   "alternatives": [
+    {
+     "role": "shelter",
+     "facilityId": "F147",
+     "distM": 253,
+     "climbM": 6
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F147",
+     "distM": 253,
+     "climbM": 6
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F095",
+     "distM": 942,
+     "climbM": 1
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F123",
+     "distM": 1109,
+     "climbM": 16
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F012",
+     "distM": 1134,
+     "climbM": 43
+    },
+    {
+     "role": "care",
+     "facilityId": "F147",
+     "distM": 253,
+     "climbM": 6
+    },
+    {
+     "role": "care",
+     "facilityId": "F150",
+     "distM": 388,
+     "climbM": 4
+    }
+   ]
+  },
+  {
+   "id": "F138",
+   "name": "단봉3호 어린이공원",
+   "type": "옥외공간",
+   "lon": 129.1283548,
+   "lat": 37.477802,
+   "addr": "강원특별자치도 동해시 구미택지3길 9-3 (구미동)",
+   "dong": "구미동",
+   "roles": [
+    {
+     "role": "shelter",
+     "sub": "cold",
+     "subLabel": "한파쉼터",
+     "cap": 15,
+     "area": 118.89,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-01-21",
+     "season": "20241115~20250315",
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "heat",
+     "subLabel": "무더위쉼터",
+     "cap": 15,
+     "area": 118.89,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-03-09",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "play",
+     "subLabel": "어린이 놀이",
+     "cap": null,
+     "area": null,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "senior",
+     "subLabel": "어르신 모임",
+     "cap": null,
+     "area": 119,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "kyungro"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": []
+  },
+  {
+   "id": "F147",
+   "name": "골말경로당",
+   "type": "경로당",
+   "lon": 129.0987191,
+   "lat": 37.5442987,
+   "addr": "강원특별자치도 동해시 느릅재길 38-1 (발한동)",
+   "dong": "발한동",
+   "roles": [
+    {
+     "role": "shelter",
+     "sub": "cold",
+     "subLabel": "한파쉼터",
+     "cap": 25,
+     "area": 180.38,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-01-21",
+     "season": "20241115~20250315",
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "heat",
+     "subLabel": "무더위쉼터",
+     "cap": 25,
+     "area": 180.38,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-03-09",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "senior",
+     "subLabel": "어르신 모임",
+     "cap": null,
+     "area": 180,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "kyungro"
+    }
+   ],
+   "status": "check",
+   "events": [
+    {
+     "id": "E015",
+     "kind": "공사",
+     "cause": "그린리모델링(건축, 기계)",
+     "notice": "2026-08-31",
+     "start": "2026-09-30",
+     "end": "2026-11-29",
+     "certainty": "예정",
+     "roles": [
+      "shelter",
+      "care"
+     ],
+     "source": "모두입찰 R26BK01705329",
+     "url": "https://www.modoobid.co.kr/bid/org/강원특별자치도%20동해시"
+    }
+   ],
+   "alternatives": [
+    {
+     "role": "shelter",
+     "facilityId": "F131",
+     "distM": 253,
+     "climbM": 2
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F131",
+     "distM": 253,
+     "climbM": 2
+    },
+    {
+     "role": "care",
+     "facilityId": "F131",
+     "distM": 253,
+     "climbM": 2
+    }
+   ]
+  },
+  {
+   "id": "F150",
+   "name": "대원곡경로당",
+   "type": "경로당",
+   "lon": 129.1028818,
+   "lat": 37.548603,
+   "addr": "강원특별자치도 동해시 지리1길 35-1 (발한동)",
+   "dong": "발한동",
+   "roles": [
+    {
+     "role": "shelter",
+     "sub": "cold",
+     "subLabel": "한파쉼터",
+     "cap": 20,
+     "area": 106.65,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-01-21",
+     "season": "20241115~20250315",
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "heat",
+     "subLabel": "무더위쉼터",
+     "cap": 20,
+     "area": 106.65,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-03-09",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "senior",
+     "subLabel": "어르신 모임",
+     "cap": null,
+     "area": 107,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "kyungro"
+    }
+   ],
+   "status": "check",
+   "events": [
+    {
+     "id": "E017",
+     "kind": "공사",
+     "cause": "그린리모델링(건축)",
+     "notice": "2026-08-31",
+     "start": "2026-09-30",
+     "end": "2026-11-29",
+     "certainty": "예정",
+     "roles": [
+      "shelter",
+      "care"
+     ],
+     "source": "모두입찰 R26BK01705391",
+     "url": "https://www.modoobid.co.kr/bid/org/강원특별자치도%20동해시"
+    }
+   ],
+   "alternatives": []
+  },
+  {
+   "id": "F157",
+   "name": "근로복지공단 동해병원",
+   "type": "의료기관",
+   "lon": 129.1062083333333,
+   "lat": 37.531219444444446,
+   "addr": "강원특별자치도 동해시 하평로 11 (평릉동, 근로복지공단동해병원)",
+   "dong": "평릉동",
+   "roles": [
+    {
+     "role": "evac",
+     "sub": "civil",
+     "subLabel": "민방위대피",
+     "cap": 992,
+     "area": 992,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": "2026-10-17",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "medical",
+     "sub": "er",
+     "subLabel": "응급의료센터",
+     "cap": 8,
+     "area": null,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": "2026-04-06",
+     "season": null,
+     "source": "safekorea"
+    }
+   ],
+   "status": "closed",
+   "events": [
+    {
+     "id": "E022",
+     "kind": "운영중단",
+     "cause": "응급실 미운영",
+     "notice": null,
+     "start": "2026-10-01T00:00:00+09:00",
+     "end": "2026-10-02T23:59:00+09:00",
+     "certainty": "확정",
+     "roles": [
+      "medical"
+     ],
+     "source": "동해시 누리집 배너 2026. 10.",
+     "url": "https://www.dh.go.kr/"
+    },
+    {
+     "id": "E023",
+     "kind": "운영중단",
+     "cause": "응급실 미운영",
+     "notice": null,
+     "start": "2026-10-06T00:00:00+09:00",
+     "end": "2026-10-07T23:59:00+09:00",
+     "certainty": "확정",
+     "roles": [
+      "medical"
+     ],
+     "source": "동해시 누리집 배너 2026. 10.",
+     "url": "https://www.dh.go.kr/"
+    },
+    {
+     "id": "E024",
+     "kind": "운영중단",
+     "cause": "응급실 미운영",
+     "notice": null,
+     "start": "2026-10-08T00:00:00+09:00",
+     "end": "2026-10-09T23:59:00+09:00",
+     "certainty": "확정",
+     "roles": [
+      "medical"
+     ],
+     "source": "동해시 누리집 배너 2026. 10.",
+     "url": "https://www.dh.go.kr/"
+    },
+    {
+     "id": "E025",
+     "kind": "운영중단",
+     "cause": "응급실 미운영",
+     "notice": null,
+     "start": "2026-10-16T00:00:00+09:00",
+     "end": "2026-10-17T23:59:00+09:00",
+     "certainty": "확정",
+     "roles": [
+      "medical"
+     ],
+     "source": "동해시 누리집 배너 2026. 10.",
+     "url": "https://www.dh.go.kr/"
+    },
+    {
+     "id": "E026",
+     "kind": "운영중단",
+     "cause": "응급실 미운영",
+     "notice": null,
+     "start": "2026-10-19T00:00:00+09:00",
+     "end": "2026-10-20T23:59:00+09:00",
+     "certainty": "확정",
+     "roles": [
+      "medical"
+     ],
+     "source": "동해시 누리집 배너 2026. 10.",
+     "url": "https://www.dh.go.kr/"
+    },
+    {
+     "id": "E027",
+     "kind": "운영중단",
+     "cause": "응급실 미운영",
+     "notice": null,
+     "start": "2026-10-23T08:30:00+09:00",
+     "end": "2026-10-23T17:30:00+09:00",
+     "certainty": "확정",
+     "roles": [
+      "medical"
+     ],
+     "source": "동해시 누리집 배너 2026. 10.",
+     "url": "https://www.dh.go.kr/"
+    },
+    {
+     "id": "E028",
+     "kind": "운영중단",
+     "cause": "응급실 미운영",
+     "notice": null,
+     "start": "2026-10-27T08:30:00+09:00",
+     "end": "2026-10-30T17:30:00+09:00",
+     "certainty": "확정",
+     "roles": [
+      "medical"
+     ],
+     "source": "동해시 누리집 배너 2026. 10.",
+     "url": "https://www.dh.go.kr/"
+    }
+   ],
+   "alternatives": [
+    {
+     "role": "evac",
+     "facilityId": "F158",
+     "distM": 170,
+     "climbM": 32
+    },
+    {
+     "role": "medical",
+     "facilityId": "F158",
+     "distM": 170,
+     "climbM": 32
+    }
+   ]
+  },
+  {
+   "id": "F158",
+   "name": "의료법인 동해동인병원",
+   "type": "의료기관",
+   "lon": 129.10742222222223,
+   "lat": 37.530030555555555,
+   "addr": "강원특별자치도 동해시 하평로 26 (평릉동)",
+   "dong": "평릉동",
+   "roles": [
+    {
+     "role": "evac",
+     "sub": "civil",
+     "subLabel": "민방위대피",
+     "cap": 1266,
+     "area": 1266,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": "2026-10-17",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "medical",
+     "sub": "er",
+     "subLabel": "응급의료센터",
+     "cap": 11,
+     "area": null,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": "2026-04-06",
+     "season": null,
+     "source": "safekorea"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": [
+    {
+     "role": "evac",
+     "facilityId": "F157",
+     "distM": 170,
+     "climbM": 0
+    },
+    {
+     "role": "medical",
+     "facilityId": "F157",
+     "distM": 170,
+     "climbM": 0
+    }
+   ]
+  },
+  {
+   "id": "F176",
+   "name": "묵호동행정복지센터",
+   "type": "행정복지센터",
+   "lon": 129.11425555555556,
+   "lat": 37.558702777777775,
+   "addr": "강원특별자치도 동해시 논골길 78, 묵호동행정복지센터 (묵호진동)",
+   "dong": "묵호진동",
+   "roles": [
+    {
+     "role": "evac",
+     "sub": "civil",
+     "subLabel": "민방위대피",
+     "cap": 208,
+     "area": 208,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": "2026-10-17",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "admin",
+     "sub": "office",
+     "subLabel": "행정 창구",
+     "cap": null,
+     "area": null,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "name-rule"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": [
+    {
+     "role": "admin",
+     "facilityId": "F178",
+     "distM": 8328,
+     "climbM": 77
+    }
+   ]
+  },
+  {
+   "id": "F178",
+   "name": "북평동행정복지센터",
+   "type": "행정복지센터",
+   "lon": 129.1254027777778,
+   "lat": 37.483894444444445,
+   "addr": "강원특별자치도 동해시 대동로 137 (북평동)",
+   "dong": "북평동",
+   "roles": [
+    {
+     "role": "evac",
+     "sub": "civil",
+     "subLabel": "민방위대피",
+     "cap": 86,
+     "area": 86,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": "2026-10-17",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "water",
+     "sub": "emergency",
+     "subLabel": "비상급수",
+     "cap": 11111,
+     "area": 100,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": "2026-10-17",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "admin",
+     "sub": "office",
+     "subLabel": "행정 창구",
+     "cap": null,
+     "area": null,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "name-rule"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": [
+    {
+     "role": "water",
+     "facilityId": "F188",
+     "distM": 3081,
+     "climbM": 48
+    },
+    {
+     "role": "admin",
+     "facilityId": "F176",
+     "distM": 8328,
+     "climbM": 150
+    }
+   ]
+  },
+  {
+   "id": "F181",
+   "name": "동해웰빙레포츠타운",
+   "type": "체육시설",
+   "lon": 129.10226283516948,
+   "lat": 37.51605821151315,
+   "addr": null,
+   "dong": "",
+   "roles": [
+    {
+     "role": "evac",
+     "sub": "eqOut",
+     "subLabel": "지진옥외대피",
+     "cap": 23109,
+     "area": 19065,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "sports",
+     "sub": "public",
+     "subLabel": "체육 공간",
+     "cap": null,
+     "area": null,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "name-rule"
+    }
+   ],
+   "status": "check",
+   "events": [
+    {
+     "id": "E003",
+     "kind": "휴관",
+     "cause": "제61회 도민체전 대회 전용",
+     "notice": null,
+     "start": "2026-06-11",
+     "end": "2026-06-16",
+     "certainty": "확정",
+     "roles": [
+      "evac",
+      "sports"
+     ],
+     "source": "삼척동해조은뉴스",
+     "url": "http://sdgoodnews.co.kr/news/view.php?no=44597"
+    }
+   ],
+   "alternatives": [
+    {
+     "role": "evac",
+     "facilityId": "F185",
+     "distM": 531,
+     "climbM": 1
+    },
+    {
+     "role": "evac",
+     "facilityId": "F183",
+     "distM": 667,
+     "climbM": 25
+    },
+    {
+     "role": "evac",
+     "facilityId": "F182",
+     "distM": 673,
+     "climbM": 2
+    }
+   ]
+  },
+  {
+   "id": "F182",
+   "name": "북평여자고등학교",
+   "type": "학교",
+   "lon": 129.1095323336945,
+   "lat": 37.51789668922589,
+   "addr": "강원특별자치도 동해시 동굴로 55(천곡동)",
+   "dong": "천곡동",
+   "roles": [
+    {
+     "role": "evac",
+     "sub": "eqOut",
+     "subLabel": "지진옥외대피",
+     "cap": 2859,
+     "area": 2359,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "evac",
+     "sub": "chem",
+     "subLabel": "화학사고대피",
+     "cap": null,
+     "area": 176,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "housing",
+     "sub": "house",
+     "subLabel": "이재민 임시주거",
+     "cap": 178,
+     "area": 464,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "housing",
+     "sub": "eqHouse",
+     "subLabel": "지진겸용 임시주거",
+     "cap": 178,
+     "area": 464,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": [
+    {
+     "role": "evac",
+     "facilityId": "F185",
+     "distM": 144,
+     "climbM": 2
+    },
+    {
+     "role": "evac",
+     "facilityId": "F181",
+     "distM": 673,
+     "climbM": 31
+    },
+    {
+     "role": "evac",
+     "facilityId": "F184",
+     "distM": 807,
+     "climbM": 38
+    },
+    {
+     "role": "evac",
+     "facilityId": "F185",
+     "distM": 144,
+     "climbM": 2
+    },
+    {
+     "role": "evac",
+     "facilityId": "F184",
+     "distM": 807,
+     "climbM": 38
+    },
+    {
+     "role": "evac",
+     "facilityId": "F188",
+     "distM": 1188,
+     "climbM": 49
+    },
+    {
+     "role": "housing",
+     "facilityId": "F185",
+     "distM": 144,
+     "climbM": 2
+    },
+    {
+     "role": "housing",
+     "facilityId": "F184",
+     "distM": 807,
+     "climbM": 38
+    },
+    {
+     "role": "housing",
+     "facilityId": "F188",
+     "distM": 1188,
+     "climbM": 49
+    },
+    {
+     "role": "housing",
+     "facilityId": "F185",
+     "distM": 144,
+     "climbM": 2
+    },
+    {
+     "role": "housing",
+     "facilityId": "F184",
+     "distM": 807,
+     "climbM": 38
+    },
+    {
+     "role": "housing",
+     "facilityId": "F188",
+     "distM": 1188,
+     "climbM": 49
+    }
+   ]
+  },
+  {
+   "id": "F183",
+   "name": "삼육고등학교",
+   "type": "학교",
+   "lon": 129.1006095294187,
+   "lat": 37.52195043971513,
+   "addr": null,
+   "dong": "",
+   "roles": [
+    {
+     "role": "evac",
+     "sub": "eqOut",
+     "subLabel": "지진옥외대피",
+     "cap": 2691,
+     "area": 2220,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "school",
+     "subLabel": "교육과 돌봄",
+     "cap": null,
+     "area": null,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "gwe-school"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": [
+    {
+     "role": "evac",
+     "facilityId": "F181",
+     "distM": 667,
+     "climbM": 33
+    },
+    {
+     "role": "evac",
+     "facilityId": "F185",
+     "distM": 832,
+     "climbM": 14
+    },
+    {
+     "role": "evac",
+     "facilityId": "F184",
+     "distM": 833,
+     "climbM": 11
+    },
+    {
+     "role": "care",
+     "facilityId": "F186",
+     "distM": 1707,
+     "climbM": 47
+    },
+    {
+     "role": "care",
+     "facilityId": "F196",
+     "distM": 2509,
+     "climbM": 87
+    },
+    {
+     "role": "care",
+     "facilityId": "F192",
+     "distM": 3577,
+     "climbM": 112
+    }
+   ]
+  },
+  {
+   "id": "F184",
+   "name": "동해중앙초등학교 병설유치원놀이터",
+   "type": "학교",
+   "lon": 129.10912096726264,
+   "lat": 37.52519266674273,
+   "addr": "강원특별자치도 동해시 천곡로 35 (천곡동)",
+   "dong": "천곡동",
+   "roles": [
+    {
+     "role": "evac",
+     "sub": "eqOut",
+     "subLabel": "지진옥외대피",
+     "cap": 2838,
+     "area": 2341,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "evac",
+     "sub": "chem",
+     "subLabel": "화학사고대피",
+     "cap": null,
+     "area": 862,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "housing",
+     "sub": "house",
+     "subLabel": "이재민 임시주거",
+     "cap": 336,
+     "area": 874,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "housing",
+     "sub": "eqHouse",
+     "subLabel": "지진겸용 임시주거",
+     "cap": 336,
+     "area": 874,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "play",
+     "subLabel": "어린이 놀이",
+     "cap": null,
+     "area": 78.7,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": [
+    {
+     "role": "evac",
+     "facilityId": "F182",
+     "distM": 807,
+     "climbM": 49
+    },
+    {
+     "role": "evac",
+     "facilityId": "F183",
+     "distM": 833,
+     "climbM": 43
+    },
+    {
+     "role": "evac",
+     "facilityId": "F185",
+     "distM": 873,
+     "climbM": 55
+    },
+    {
+     "role": "evac",
+     "facilityId": "F182",
+     "distM": 807,
+     "climbM": 49
+    },
+    {
+     "role": "evac",
+     "facilityId": "F185",
+     "distM": 873,
+     "climbM": 55
+    },
+    {
+     "role": "evac",
+     "facilityId": "F186",
+     "distM": 1021,
+     "climbM": 46
+    },
+    {
+     "role": "housing",
+     "facilityId": "F182",
+     "distM": 807,
+     "climbM": 49
+    },
+    {
+     "role": "housing",
+     "facilityId": "F185",
+     "distM": 873,
+     "climbM": 55
+    },
+    {
+     "role": "housing",
+     "facilityId": "F186",
+     "distM": 1021,
+     "climbM": 46
+    },
+    {
+     "role": "housing",
+     "facilityId": "F182",
+     "distM": 807,
+     "climbM": 49
+    },
+    {
+     "role": "housing",
+     "facilityId": "F185",
+     "distM": 873,
+     "climbM": 55
+    },
+    {
+     "role": "housing",
+     "facilityId": "F186",
+     "distM": 1021,
+     "climbM": 46
+    },
+    {
+     "role": "care",
+     "facilityId": "F004",
+     "distM": 170,
+     "climbM": 32
+    },
+    {
+     "role": "care",
+     "facilityId": "F005",
+     "distM": 188,
+     "climbM": 13
+    }
+   ]
+  },
+  {
+   "id": "F185",
+   "name": "천곡초등학교병설유치원 놀이시설",
+   "type": "학교",
+   "lon": 129.10805745635548,
+   "lat": 37.51734201193861,
+   "addr": "강원특별자치도 동해시 동굴로 33(천곡동)",
+   "dong": "천곡동",
+   "roles": [
+    {
+     "role": "evac",
+     "sub": "eqOut",
+     "subLabel": "지진옥외대피",
+     "cap": 4212,
+     "area": 3475,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "evac",
+     "sub": "chem",
+     "subLabel": "화학사고대피",
+     "cap": null,
+     "area": 876,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "housing",
+     "sub": "house",
+     "subLabel": "이재민 임시주거",
+     "cap": 129,
+     "area": 336,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "housing",
+     "sub": "eqHouse",
+     "subLabel": "지진겸용 임시주거",
+     "cap": 129,
+     "area": 336,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "play",
+     "subLabel": "어린이 놀이",
+     "cap": null,
+     "area": 344.5,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": [
+    {
+     "role": "evac",
+     "facilityId": "F182",
+     "distM": 144,
+     "climbM": 1
+    },
+    {
+     "role": "evac",
+     "facilityId": "F181",
+     "distM": 531,
+     "climbM": 30
+    },
+    {
+     "role": "evac",
+     "facilityId": "F183",
+     "distM": 832,
+     "climbM": 34
+    },
+    {
+     "role": "evac",
+     "facilityId": "F182",
+     "distM": 144,
+     "climbM": 1
+    },
+    {
+     "role": "evac",
+     "facilityId": "F184",
+     "distM": 873,
+     "climbM": 44
+    },
+    {
+     "role": "evac",
+     "facilityId": "F188",
+     "distM": 1262,
+     "climbM": 58
+    },
+    {
+     "role": "housing",
+     "facilityId": "F182",
+     "distM": 144,
+     "climbM": 1
+    },
+    {
+     "role": "housing",
+     "facilityId": "F184",
+     "distM": 873,
+     "climbM": 44
+    },
+    {
+     "role": "housing",
+     "facilityId": "F188",
+     "distM": 1262,
+     "climbM": 58
+    },
+    {
+     "role": "housing",
+     "facilityId": "F182",
+     "distM": 144,
+     "climbM": 1
+    },
+    {
+     "role": "housing",
+     "facilityId": "F184",
+     "distM": 873,
+     "climbM": 44
+    },
+    {
+     "role": "housing",
+     "facilityId": "F188",
+     "distM": 1262,
+     "climbM": 58
+    },
+    {
+     "role": "care",
+     "facilityId": "F017",
+     "distM": 285,
+     "climbM": 26
+    }
+   ]
+  },
+  {
+   "id": "F186",
+   "name": "남호초등학교 병설유치원 놀이터",
+   "type": "학교",
+   "lon": 129.1127832200518,
+   "lat": 37.53395208200888,
+   "addr": "강원특별자치도 동해시 평원로 120(평릉동)",
+   "dong": "평릉동",
+   "roles": [
+    {
+     "role": "evac",
+     "sub": "eqOut",
+     "subLabel": "지진옥외대피",
+     "cap": 3642,
+     "area": 3005,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "evac",
+     "sub": "chem",
+     "subLabel": "화학사고대피",
+     "cap": null,
+     "area": 385,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "housing",
+     "sub": "house",
+     "subLabel": "이재민 임시주거",
+     "cap": 176,
+     "area": 680,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "housing",
+     "sub": "eqHouse",
+     "subLabel": "지진겸용 임시주거",
+     "cap": 176,
+     "area": 680,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "play",
+     "subLabel": "어린이 놀이",
+     "cap": null,
+     "area": 670,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "school",
+     "subLabel": "교육과 돌봄",
+     "cap": null,
+     "area": null,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "gwe-school"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": [
+    {
+     "role": "evac",
+     "facilityId": "F184",
+     "distM": 1021,
+     "climbM": 57
+    },
+    {
+     "role": "evac",
+     "facilityId": "F199",
+     "distM": 1275,
+     "climbM": 56
+    },
+    {
+     "role": "evac",
+     "facilityId": "F198",
+     "distM": 1484,
+     "climbM": 58
+    },
+    {
+     "role": "evac",
+     "facilityId": "F184",
+     "distM": 1021,
+     "climbM": 57
+    },
+    {
+     "role": "evac",
+     "facilityId": "F199",
+     "distM": 1275,
+     "climbM": 56
+    },
+    {
+     "role": "evac",
+     "facilityId": "F198",
+     "distM": 1484,
+     "climbM": 58
+    },
+    {
+     "role": "housing",
+     "facilityId": "F184",
+     "distM": 1021,
+     "climbM": 57
+    },
+    {
+     "role": "housing",
+     "facilityId": "F199",
+     "distM": 1275,
+     "climbM": 56
+    },
+    {
+     "role": "housing",
+     "facilityId": "F184",
+     "distM": 1021,
+     "climbM": 57
+    },
+    {
+     "role": "housing",
+     "facilityId": "F199",
+     "distM": 1275,
+     "climbM": 56
+    },
+    {
+     "role": "care",
+     "facilityId": "F183",
+     "distM": 1707,
+     "climbM": 90
+    },
+    {
+     "role": "care",
+     "facilityId": "F196",
+     "distM": 1960,
+     "climbM": 80
+    },
+    {
+     "role": "care",
+     "facilityId": "F192",
+     "distM": 4951,
+     "climbM": 185
+    }
+   ]
+  },
+  {
+   "id": "F187",
+   "name": "송정초등학교",
+   "type": "학교",
+   "lon": 129.122945342416,
+   "lat": 37.49422239310097,
+   "addr": null,
+   "dong": "",
+   "roles": [
+    {
+     "role": "evac",
+     "sub": "eqOut",
+     "subLabel": "지진옥외대피",
+     "cap": 6893,
+     "area": 5687,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "housing",
+     "sub": "house",
+     "subLabel": "이재민 임시주거",
+     "cap": 51,
+     "area": 135,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "housing",
+     "sub": "eqHouse",
+     "subLabel": "지진겸용 임시주거",
+     "cap": 51,
+     "area": 135,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": [
+    {
+     "role": "evac",
+     "facilityId": "F189",
+     "distM": 720,
+     "climbM": 6
+    },
+    {
+     "role": "evac",
+     "facilityId": "F193",
+     "distM": 1432,
+     "climbM": 13
+    },
+    {
+     "role": "housing",
+     "facilityId": "F189",
+     "distM": 720,
+     "climbM": 6
+    },
+    {
+     "role": "housing",
+     "facilityId": "F193",
+     "distM": 1432,
+     "climbM": 13
+    },
+    {
+     "role": "housing",
+     "facilityId": "F189",
+     "distM": 720,
+     "climbM": 6
+    },
+    {
+     "role": "housing",
+     "facilityId": "F193",
+     "distM": 1432,
+     "climbM": 13
+    }
+   ]
+  },
+  {
+   "id": "F188",
+   "name": "동해초등학교 병설유치원놀이터",
+   "type": "학교",
+   "lon": 129.12031059521527,
+   "lat": 37.51146651668745,
+   "addr": "강원특별자치도 동해시 봉오주택길 22(용정동)",
+   "dong": "용정동",
+   "roles": [
+    {
+     "role": "evac",
+     "sub": "eqOut",
+     "subLabel": "지진옥외대피",
+     "cap": 11002,
+     "area": 9077,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "evac",
+     "sub": "chem",
+     "subLabel": "화학사고대피",
+     "cap": null,
+     "area": 831,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "housing",
+     "sub": "house",
+     "subLabel": "이재민 임시주거",
+     "cap": 361,
+     "area": 940,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "housing",
+     "sub": "eqHouse",
+     "subLabel": "지진겸용 임시주거",
+     "cap": 361,
+     "area": 940,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "water",
+     "sub": "emergency",
+     "subLabel": "비상급수",
+     "cap": 11111,
+     "area": 100,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": "2026-10-17",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "play",
+     "subLabel": "어린이 놀이",
+     "cap": null,
+     "area": 211.2,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": [
+    {
+     "role": "evac",
+     "facilityId": "F182",
+     "distM": 1188,
+     "climbM": 43
+    },
+    {
+     "role": "evac",
+     "facilityId": "F185",
+     "distM": 1262,
+     "climbM": 53
+    },
+    {
+     "role": "evac",
+     "facilityId": "F189",
+     "distM": 1526,
+     "climbM": 18
+    },
+    {
+     "role": "evac",
+     "facilityId": "F182",
+     "distM": 1188,
+     "climbM": 43
+    },
+    {
+     "role": "evac",
+     "facilityId": "F185",
+     "distM": 1262,
+     "climbM": 53
+    },
+    {
+     "role": "evac",
+     "facilityId": "F189",
+     "distM": 1526,
+     "climbM": 18
+    },
+    {
+     "role": "housing",
+     "facilityId": "F182",
+     "distM": 1188,
+     "climbM": 43
+    },
+    {
+     "role": "housing",
+     "facilityId": "F185",
+     "distM": 1262,
+     "climbM": 53
+    },
+    {
+     "role": "housing",
+     "facilityId": "F189",
+     "distM": 1526,
+     "climbM": 18
+    },
+    {
+     "role": "housing",
+     "facilityId": "F182",
+     "distM": 1188,
+     "climbM": 43
+    },
+    {
+     "role": "housing",
+     "facilityId": "F185",
+     "distM": 1262,
+     "climbM": 53
+    },
+    {
+     "role": "housing",
+     "facilityId": "F189",
+     "distM": 1526,
+     "climbM": 18
+    },
+    {
+     "role": "water",
+     "facilityId": "F178",
+     "distM": 3081,
+     "climbM": 15
+    }
+   ]
+  },
+  {
+   "id": "F189",
+   "name": "북평중학교",
+   "type": "학교",
+   "lon": 129.11633044481914,
+   "lat": 37.49803555108992,
+   "addr": "강원특별자치도 동해시 용정로 40-7",
+   "dong": "용정동",
+   "roles": [
+    {
+     "role": "evac",
+     "sub": "eqOut",
+     "subLabel": "지진옥외대피",
+     "cap": 7611,
+     "area": 6279,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "evac",
+     "sub": "chem",
+     "subLabel": "화학사고대피",
+     "cap": null,
+     "area": 901,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "housing",
+     "sub": "house",
+     "subLabel": "이재민 임시주거",
+     "cap": 161,
+     "area": 420,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "housing",
+     "sub": "eqHouse",
+     "subLabel": "지진겸용 임시주거",
+     "cap": 161,
+     "area": 420,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": [
+    {
+     "role": "evac",
+     "facilityId": "F187",
+     "distM": 720,
+     "climbM": 6
+    },
+    {
+     "role": "evac",
+     "facilityId": "F193",
+     "distM": 1132,
+     "climbM": 11
+    },
+    {
+     "role": "evac",
+     "facilityId": "F191",
+     "distM": 1345,
+     "climbM": 25
+    },
+    {
+     "role": "evac",
+     "facilityId": "F193",
+     "distM": 1132,
+     "climbM": 11
+    },
+    {
+     "role": "evac",
+     "facilityId": "F192",
+     "distM": 1421,
+     "climbM": 14
+    },
+    {
+     "role": "evac",
+     "facilityId": "F188",
+     "distM": 1526,
+     "climbM": 53
+    },
+    {
+     "role": "housing",
+     "facilityId": "F187",
+     "distM": 720,
+     "climbM": 6
+    },
+    {
+     "role": "housing",
+     "facilityId": "F193",
+     "distM": 1132,
+     "climbM": 11
+    },
+    {
+     "role": "housing",
+     "facilityId": "F191",
+     "distM": 1345,
+     "climbM": 25
+    },
+    {
+     "role": "housing",
+     "facilityId": "F187",
+     "distM": 720,
+     "climbM": 6
+    },
+    {
+     "role": "housing",
+     "facilityId": "F193",
+     "distM": 1132,
+     "climbM": 11
+    },
+    {
+     "role": "housing",
+     "facilityId": "F192",
+     "distM": 1421,
+     "climbM": 14
+    }
+   ]
+  },
+  {
+   "id": "F190",
+   "name": "(구)한중대학교",
+   "type": "학교",
+   "lon": 129.08984094858332,
+   "lat": 37.504404369896406,
+   "addr": null,
+   "dong": "",
+   "roles": [
+    {
+     "role": "evac",
+     "sub": "eqOut",
+     "subLabel": "지진옥외대피",
+     "cap": 10352,
+     "area": 8540,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": [
+    {
+     "role": "evac",
+     "facilityId": "F191",
+     "distM": 1422,
+     "climbM": 11
+    },
+    {
+     "role": "evac",
+     "facilityId": "F181",
+     "distM": 1692,
+     "climbM": 61
+    },
+    {
+     "role": "evac",
+     "facilityId": "F192",
+     "distM": 2054,
+     "climbM": 9
+    }
+   ]
+  },
+  {
+   "id": "F191",
+   "name": "북삼초등학교",
+   "type": "학교",
+   "lon": 129.10143963327772,
+   "lat": 37.495478207737776,
+   "addr": null,
+   "dong": "",
+   "roles": [
+    {
+     "role": "evac",
+     "sub": "eqOut",
+     "subLabel": "지진옥외대피",
+     "cap": 6824,
+     "area": 5630,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "housing",
+     "sub": "house",
+     "subLabel": "이재민 임시주거",
+     "cap": 286,
+     "area": 744,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": [
+    {
+     "role": "evac",
+     "facilityId": "F192",
+     "distM": 679,
+     "climbM": 13
+    },
+    {
+     "role": "evac",
+     "facilityId": "F193",
+     "distM": 737,
+     "climbM": 5
+    },
+    {
+     "role": "evac",
+     "facilityId": "F194",
+     "distM": 1206,
+     "climbM": 21
+    },
+    {
+     "role": "housing",
+     "facilityId": "F192",
+     "distM": 679,
+     "climbM": 13
+    },
+    {
+     "role": "housing",
+     "facilityId": "F193",
+     "distM": 737,
+     "climbM": 5
+    },
+    {
+     "role": "housing",
+     "facilityId": "F194",
+     "distM": 1206,
+     "climbM": 21
+    }
+   ]
+  },
+  {
+   "id": "F192",
+   "name": "동해광희고등학교",
+   "type": "학교",
+   "lon": 129.1040700674074,
+   "lat": 37.489710368834224,
+   "addr": "강원특별자치도 동해시 청운로 112",
+   "dong": "동회동",
+   "roles": [
+    {
+     "role": "evac",
+     "sub": "eqOut",
+     "subLabel": "지진옥외대피",
+     "cap": 11224,
+     "area": 9260,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "evac",
+     "sub": "chem",
+     "subLabel": "화학사고대피",
+     "cap": null,
+     "area": 1068,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "housing",
+     "sub": "house",
+     "subLabel": "이재민 임시주거",
+     "cap": 380,
+     "area": 990,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "housing",
+     "sub": "eqHouse",
+     "subLabel": "지진겸용 임시주거",
+     "cap": 380,
+     "area": 990,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "school",
+     "subLabel": "교육과 돌봄",
+     "cap": null,
+     "area": null,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "gwe-school"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": [
+    {
+     "role": "evac",
+     "facilityId": "F193",
+     "distM": 310,
+     "climbM": 3
+    },
+    {
+     "role": "evac",
+     "facilityId": "F194",
+     "distM": 548,
+     "climbM": 10
+    },
+    {
+     "role": "evac",
+     "facilityId": "F191",
+     "distM": 679,
+     "climbM": 30
+    },
+    {
+     "role": "evac",
+     "facilityId": "F193",
+     "distM": 310,
+     "climbM": 3
+    },
+    {
+     "role": "evac",
+     "facilityId": "F194",
+     "distM": 548,
+     "climbM": 10
+    },
+    {
+     "role": "evac",
+     "facilityId": "F189",
+     "distM": 1421,
+     "climbM": 6
+    },
+    {
+     "role": "housing",
+     "facilityId": "F193",
+     "distM": 310,
+     "climbM": 3
+    },
+    {
+     "role": "housing",
+     "facilityId": "F194",
+     "distM": 548,
+     "climbM": 10
+    },
+    {
+     "role": "housing",
+     "facilityId": "F191",
+     "distM": 679,
+     "climbM": 30
+    },
+    {
+     "role": "housing",
+     "facilityId": "F193",
+     "distM": 310,
+     "climbM": 3
+    },
+    {
+     "role": "housing",
+     "facilityId": "F194",
+     "distM": 548,
+     "climbM": 10
+    },
+    {
+     "role": "housing",
+     "facilityId": "F189",
+     "distM": 1421,
+     "climbM": 6
+    },
+    {
+     "role": "care",
+     "facilityId": "F183",
+     "distM": 3577,
+     "climbM": 155
+    },
+    {
+     "role": "care",
+     "facilityId": "F186",
+     "distM": 4951,
+     "climbM": 183
+    }
+   ]
+  },
+  {
+   "id": "F193",
+   "name": "북평고등학교",
+   "type": "학교",
+   "lon": 129.10732515636926,
+   "lat": 37.49075428977057,
+   "addr": "강원특별자치도 동해시 효자남길 51(동회동)",
+   "dong": "동회동",
+   "roles": [
+    {
+     "role": "evac",
+     "sub": "eqOut",
+     "subLabel": "지진옥외대피",
+     "cap": 12839,
+     "area": 10592,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "evac",
+     "sub": "chem",
+     "subLabel": "화학사고대피",
+     "cap": null,
+     "area": 676,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "housing",
+     "sub": "house",
+     "subLabel": "이재민 임시주거",
+     "cap": 420,
+     "area": 1094,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "housing",
+     "sub": "eqHouse",
+     "subLabel": "지진겸용 임시주거",
+     "cap": 420,
+     "area": 1094,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": [
+    {
+     "role": "evac",
+     "facilityId": "F192",
+     "distM": 310,
+     "climbM": 4
+    },
+    {
+     "role": "evac",
+     "facilityId": "F194",
+     "distM": 727,
+     "climbM": 14
+    },
+    {
+     "role": "evac",
+     "facilityId": "F191",
+     "distM": 737,
+     "climbM": 23
+    },
+    {
+     "role": "evac",
+     "facilityId": "F192",
+     "distM": 310,
+     "climbM": 4
+    },
+    {
+     "role": "evac",
+     "facilityId": "F194",
+     "distM": 727,
+     "climbM": 14
+    },
+    {
+     "role": "evac",
+     "facilityId": "F189",
+     "distM": 1132,
+     "climbM": 4
+    },
+    {
+     "role": "housing",
+     "facilityId": "F192",
+     "distM": 310,
+     "climbM": 4
+    },
+    {
+     "role": "housing",
+     "facilityId": "F194",
+     "distM": 727,
+     "climbM": 14
+    },
+    {
+     "role": "housing",
+     "facilityId": "F191",
+     "distM": 737,
+     "climbM": 23
+    },
+    {
+     "role": "housing",
+     "facilityId": "F192",
+     "distM": 310,
+     "climbM": 4
+    },
+    {
+     "role": "housing",
+     "facilityId": "F194",
+     "distM": 727,
+     "climbM": 14
+    },
+    {
+     "role": "housing",
+     "facilityId": "F189",
+     "distM": 1132,
+     "climbM": 4
+    }
+   ]
+  },
+  {
+   "id": "F194",
+   "name": "청운초등학교 상상놀이터",
+   "type": "학교",
+   "lon": 129.1039413213747,
+   "lat": 37.48475567883883,
+   "addr": "강원특별자치도 동해시 청운로 60",
+   "dong": "쇄운동",
+   "roles": [
+    {
+     "role": "evac",
+     "sub": "eqOut",
+     "subLabel": "지진옥외대피",
+     "cap": 6758,
+     "area": 5575,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "evac",
+     "sub": "chem",
+     "subLabel": "화학사고대피",
+     "cap": null,
+     "area": 1227,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "housing",
+     "sub": "house",
+     "subLabel": "이재민 임시주거",
+     "cap": 276,
+     "area": 720,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "housing",
+     "sub": "eqHouse",
+     "subLabel": "지진겸용 임시주거",
+     "cap": 276,
+     "area": 720,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "play",
+     "subLabel": "어린이 놀이",
+     "cap": null,
+     "area": 217.6,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": [
+    {
+     "role": "evac",
+     "facilityId": "F192",
+     "distM": 548,
+     "climbM": 10
+    },
+    {
+     "role": "evac",
+     "facilityId": "F193",
+     "distM": 727,
+     "climbM": 13
+    },
+    {
+     "role": "evac",
+     "facilityId": "F191",
+     "distM": 1206,
+     "climbM": 38
+    },
+    {
+     "role": "evac",
+     "facilityId": "F192",
+     "distM": 548,
+     "climbM": 10
+    },
+    {
+     "role": "evac",
+     "facilityId": "F193",
+     "distM": 727,
+     "climbM": 13
+    },
+    {
+     "role": "housing",
+     "facilityId": "F192",
+     "distM": 548,
+     "climbM": 10
+    },
+    {
+     "role": "housing",
+     "facilityId": "F193",
+     "distM": 727,
+     "climbM": 13
+    },
+    {
+     "role": "housing",
+     "facilityId": "F191",
+     "distM": 1206,
+     "climbM": 38
+    },
+    {
+     "role": "housing",
+     "facilityId": "F192",
+     "distM": 548,
+     "climbM": 10
+    },
+    {
+     "role": "housing",
+     "facilityId": "F193",
+     "distM": 727,
+     "climbM": 13
+    }
+   ]
+  },
+  {
+   "id": "F195",
+   "name": "묵호고등학교",
+   "type": "학교",
+   "lon": 129.0960797257046,
+   "lat": 37.53801588453615,
+   "addr": "강원특별자치도 동해시 승지로 37(부곡동)",
+   "dong": "부곡동",
+   "roles": [
+    {
+     "role": "evac",
+     "sub": "eqOut",
+     "subLabel": "지진옥외대피",
+     "cap": 6924,
+     "area": 5712,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "evac",
+     "sub": "chem",
+     "subLabel": "화학사고대피",
+     "cap": null,
+     "area": 400,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": [
+    {
+     "role": "evac",
+     "facilityId": "F197",
+     "distM": 631,
+     "climbM": 16
+    },
+    {
+     "role": "evac",
+     "facilityId": "F196",
+     "distM": 689,
+     "climbM": 23
+    },
+    {
+     "role": "evac",
+     "facilityId": "F198",
+     "distM": 731,
+     "climbM": 17
+    },
+    {
+     "role": "evac",
+     "facilityId": "F196",
+     "distM": 689,
+     "climbM": 23
+    },
+    {
+     "role": "evac",
+     "facilityId": "F198",
+     "distM": 731,
+     "climbM": 17
+    },
+    {
+     "role": "evac",
+     "facilityId": "F199",
+     "distM": 1094,
+     "climbM": 12
+    }
+   ]
+  },
+  {
+   "id": "F196",
+   "name": "동해상업고등학교",
+   "type": "학교",
+   "lon": 129.0946125984209,
+   "lat": 37.54413497250179,
+   "addr": "강원특별자치도 동해시 느릅재길 65",
+   "dong": "발한동",
+   "roles": [
+    {
+     "role": "evac",
+     "sub": "eqOut",
+     "subLabel": "지진옥외대피",
+     "cap": 7145,
+     "area": 5895,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "evac",
+     "sub": "chem",
+     "subLabel": "화학사고대피",
+     "cap": null,
+     "area": 638,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "housing",
+     "sub": "house",
+     "subLabel": "이재민 임시주거",
+     "cap": 253,
+     "area": 660,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "housing",
+     "sub": "eqHouse",
+     "subLabel": "지진겸용 임시주거",
+     "cap": 253,
+     "area": 660,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "school",
+     "subLabel": "교육과 돌봄",
+     "cap": null,
+     "area": null,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "gwe-school"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": [
+    {
+     "role": "evac",
+     "facilityId": "F197",
+     "distM": 272,
+     "climbM": 0
+    },
+    {
+     "role": "evac",
+     "facilityId": "F198",
+     "distM": 557,
+     "climbM": 0
+    },
+    {
+     "role": "evac",
+     "facilityId": "F195",
+     "distM": 689,
+     "climbM": 22
+    },
+    {
+     "role": "evac",
+     "facilityId": "F198",
+     "distM": 557,
+     "climbM": 0
+    },
+    {
+     "role": "evac",
+     "facilityId": "F195",
+     "distM": 689,
+     "climbM": 22
+    },
+    {
+     "role": "evac",
+     "facilityId": "F199",
+     "distM": 994,
+     "climbM": 1
+    },
+    {
+     "role": "housing",
+     "facilityId": "F197",
+     "distM": 272,
+     "climbM": 0
+    },
+    {
+     "role": "housing",
+     "facilityId": "F198",
+     "distM": 557,
+     "climbM": 0
+    },
+    {
+     "role": "housing",
+     "facilityId": "F199",
+     "distM": 994,
+     "climbM": 1
+    },
+    {
+     "role": "housing",
+     "facilityId": "F197",
+     "distM": 272,
+     "climbM": 0
+    },
+    {
+     "role": "housing",
+     "facilityId": "F198",
+     "distM": 557,
+     "climbM": 0
+    },
+    {
+     "role": "housing",
+     "facilityId": "F199",
+     "distM": 994,
+     "climbM": 1
+    },
+    {
+     "role": "care",
+     "facilityId": "F186",
+     "distM": 1959,
+     "climbM": 33
+    },
+    {
+     "role": "care",
+     "facilityId": "F183",
+     "distM": 2509,
+     "climbM": 83
+    },
+    {
+     "role": "care",
+     "facilityId": "F192",
+     "distM": 6074,
+     "climbM": 221
+    }
+   ]
+  },
+  {
+   "id": "F197",
+   "name": "동해중학교",
+   "type": "학교",
+   "lon": 129.09762203693558,
+   "lat": 37.54358628676303,
+   "addr": "강원특별자치도 동해시 느릅재길 37",
+   "dong": "",
+   "roles": [
+    {
+     "role": "evac",
+     "sub": "eqOut",
+     "subLabel": "지진옥외대피",
+     "cap": 7440,
+     "area": 6138,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "housing",
+     "sub": "house",
+     "subLabel": "이재민 임시주거",
+     "cap": 276,
+     "area": 718,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "housing",
+     "sub": "eqHouse",
+     "subLabel": "지진겸용 임시주거",
+     "cap": 276,
+     "area": 718,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": [
+    {
+     "role": "evac",
+     "facilityId": "F196",
+     "distM": 272,
+     "climbM": 25
+    },
+    {
+     "role": "evac",
+     "facilityId": "F198",
+     "distM": 287,
+     "climbM": 0
+    },
+    {
+     "role": "evac",
+     "facilityId": "F195",
+     "distM": 631,
+     "climbM": 41
+    },
+    {
+     "role": "housing",
+     "facilityId": "F196",
+     "distM": 272,
+     "climbM": 25
+    },
+    {
+     "role": "housing",
+     "facilityId": "F198",
+     "distM": 287,
+     "climbM": 0
+    },
+    {
+     "role": "housing",
+     "facilityId": "F199",
+     "distM": 730,
+     "climbM": 1
+    },
+    {
+     "role": "housing",
+     "facilityId": "F196",
+     "distM": 272,
+     "climbM": 25
+    },
+    {
+     "role": "housing",
+     "facilityId": "F198",
+     "distM": 287,
+     "climbM": 0
+    },
+    {
+     "role": "housing",
+     "facilityId": "F199",
+     "distM": 730,
+     "climbM": 1
+    }
+   ]
+  },
+  {
+   "id": "F198",
+   "name": "동호초등학교",
+   "type": "학교",
+   "lon": 129.10086214542557,
+   "lat": 37.543411897426715,
+   "addr": "강원특별자치도 동해시 동호로 25",
+   "dong": "발한동",
+   "roles": [
+    {
+     "role": "evac",
+     "sub": "eqOut",
+     "subLabel": "지진옥외대피",
+     "cap": 6373,
+     "area": 5258,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "evac",
+     "sub": "chem",
+     "subLabel": "화학사고대피",
+     "cap": null,
+     "area": 381,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "housing",
+     "sub": "house",
+     "subLabel": "이재민 임시주거",
+     "cap": 185,
+     "area": 482,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "housing",
+     "sub": "eqHouse",
+     "subLabel": "지진겸용 임시주거",
+     "cap": 185,
+     "area": 482,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": [
+    {
+     "role": "evac",
+     "facilityId": "F197",
+     "distM": 287,
+     "climbM": 10
+    },
+    {
+     "role": "evac",
+     "facilityId": "F199",
+     "distM": 448,
+     "climbM": 1
+    },
+    {
+     "role": "evac",
+     "facilityId": "F196",
+     "distM": 557,
+     "climbM": 35
+    },
+    {
+     "role": "evac",
+     "facilityId": "F199",
+     "distM": 448,
+     "climbM": 1
+    },
+    {
+     "role": "evac",
+     "facilityId": "F196",
+     "distM": 557,
+     "climbM": 35
+    },
+    {
+     "role": "evac",
+     "facilityId": "F195",
+     "distM": 731,
+     "climbM": 51
+    },
+    {
+     "role": "housing",
+     "facilityId": "F197",
+     "distM": 287,
+     "climbM": 10
+    },
+    {
+     "role": "housing",
+     "facilityId": "F199",
+     "distM": 448,
+     "climbM": 1
+    },
+    {
+     "role": "housing",
+     "facilityId": "F196",
+     "distM": 557,
+     "climbM": 35
+    },
+    {
+     "role": "housing",
+     "facilityId": "F197",
+     "distM": 287,
+     "climbM": 10
+    },
+    {
+     "role": "housing",
+     "facilityId": "F199",
+     "distM": 448,
+     "climbM": 1
+    },
+    {
+     "role": "housing",
+     "facilityId": "F196",
+     "distM": 557,
+     "climbM": 35
+    }
+   ]
+  },
+  {
+   "id": "F199",
+   "name": "묵호중학교",
+   "type": "학교",
+   "lon": 129.1058725118654,
+   "lat": 37.54407755209037,
+   "addr": "강원특별자치도 동해시 향로3길 42",
+   "dong": "발한동",
+   "roles": [
+    {
+     "role": "evac",
+     "sub": "eqOut",
+     "subLabel": "지진옥외대피",
+     "cap": 8985,
+     "area": 7413,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "evac",
+     "sub": "chem",
+     "subLabel": "화학사고대피",
+     "cap": null,
+     "area": 581,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "housing",
+     "sub": "house",
+     "subLabel": "이재민 임시주거",
+     "cap": 269,
+     "area": 700,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "housing",
+     "sub": "eqHouse",
+     "subLabel": "지진겸용 임시주거",
+     "cap": 269,
+     "area": 700,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": [
+    {
+     "role": "evac",
+     "facilityId": "F198",
+     "distM": 448,
+     "climbM": 5
+    },
+    {
+     "role": "evac",
+     "facilityId": "F197",
+     "distM": 730,
+     "climbM": 15
+    },
+    {
+     "role": "evac",
+     "facilityId": "F198",
+     "distM": 448,
+     "climbM": 5
+    },
+    {
+     "role": "evac",
+     "facilityId": "F196",
+     "distM": 994,
+     "climbM": 40
+    },
+    {
+     "role": "housing",
+     "facilityId": "F198",
+     "distM": 448,
+     "climbM": 5
+    },
+    {
+     "role": "housing",
+     "facilityId": "F197",
+     "distM": 730,
+     "climbM": 15
+    },
+    {
+     "role": "housing",
+     "facilityId": "F198",
+     "distM": 448,
+     "climbM": 5
+    },
+    {
+     "role": "housing",
+     "facilityId": "F197",
+     "distM": 730,
+     "climbM": 15
+    }
+   ]
+  },
+  {
+   "id": "F004",
+   "name": "한양2,3차아파트(26동, 27동앞)",
+   "type": "공동주택",
+   "lon": 129.1089526,
+   "lat": 37.526729,
+   "addr": "강원특별자치도 동해시 천곡로 15 (천곡동, 한양아파트)",
+   "dong": "천곡동",
+   "roles": [
+    {
+     "role": "shelter",
+     "sub": "cold",
+     "subLabel": "한파쉼터",
+     "cap": 20,
+     "area": 136.62,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-01-21",
+     "season": "20241115~20250315",
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "heat",
+     "subLabel": "무더위쉼터",
+     "cap": 20,
+     "area": 136.62,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-03-09",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "play",
+     "subLabel": "어린이 놀이",
+     "cap": null,
+     "area": null,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": [
+    {
+     "role": "shelter",
+     "facilityId": "F005",
+     "distM": 175,
+     "climbM": 0
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F005",
+     "distM": 175,
+     "climbM": 0
+    },
+    {
+     "role": "care",
+     "facilityId": "F184",
+     "distM": 170,
+     "climbM": 0
+    },
+    {
+     "role": "care",
+     "facilityId": "F005",
+     "distM": 175,
+     "climbM": 0
+    }
+   ]
+  },
+  {
+   "id": "F005",
+   "name": "한양1차아파트경로당",
+   "type": "경로당",
+   "lon": 129.1072232,
+   "lat": 37.5259623,
+   "addr": "강원특별자치도 동해시 천곡로 7 (천곡동, 한양아파트)",
+   "dong": "천곡동",
+   "roles": [
+    {
+     "role": "shelter",
+     "sub": "cold",
+     "subLabel": "한파쉼터",
+     "cap": 15,
+     "area": 84.68,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-01-21",
+     "season": "20241115~20250315",
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "heat",
+     "subLabel": "무더위쉼터",
+     "cap": 15,
+     "area": 84.68,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-03-09",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "play",
+     "subLabel": "어린이 놀이",
+     "cap": null,
+     "area": 328,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "senior",
+     "subLabel": "어르신 모임",
+     "cap": null,
+     "area": 85,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "kyungro"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": [
+    {
+     "role": "care",
+     "facilityId": "F004",
+     "distM": 175,
+     "climbM": 19
+    }
+   ]
+  },
+  {
+   "id": "F006",
+   "name": "망상2통마을경로당",
+   "type": "경로당",
+   "lon": 129.089016,
+   "lat": 37.5911612,
+   "addr": "강원특별자치도 동해시 망상길 46",
+   "dong": "망상동",
+   "roles": [
+    {
+     "role": "shelter",
+     "sub": "cold",
+     "subLabel": "한파쉼터",
+     "cap": 20,
+     "area": 115.2,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-01-21",
+     "season": "20241115~20250315",
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "heat",
+     "subLabel": "무더위쉼터",
+     "cap": 20,
+     "area": 115.2,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-03-09",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "senior",
+     "subLabel": "어르신 모임",
+     "cap": null,
+     "area": 115,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "kyungro"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": [
+    {
+     "role": "shelter",
+     "facilityId": "F124",
+     "distM": 1450,
+     "climbM": 37
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F124",
+     "distM": 1450,
+     "climbM": 37
+    },
+    {
+     "role": "care",
+     "facilityId": "F124",
+     "distM": 1450,
+     "climbM": 37
+    }
+   ]
+  },
+  {
+   "id": "F007",
+   "name": "석미모닝아파트경로당",
+   "type": "경로당",
+   "lon": 129.1021818,
+   "lat": 37.5568174,
+   "addr": "강원특별자치도 동해시 해안로 635-5 (발한동, 동해발한석미모닝파크)",
+   "dong": "발한동",
+   "roles": [
+    {
+     "role": "shelter",
+     "sub": "cold",
+     "subLabel": "한파쉼터",
+     "cap": 15,
+     "area": 89.87,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-01-21",
+     "season": "20241115~20250315",
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "heat",
+     "subLabel": "무더위쉼터",
+     "cap": 15,
+     "area": 89.87,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-03-09",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "play",
+     "subLabel": "어린이 놀이",
+     "cap": null,
+     "area": null,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": [
+    {
+     "role": "shelter",
+     "facilityId": "F123",
+     "distM": 206,
+     "climbM": 0
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F123",
+     "distM": 206,
+     "climbM": 0
+    }
+   ]
+  },
+  {
+   "id": "F008",
+   "name": "삼흥경로당",
+   "type": "경로당",
+   "lon": 129.0480618,
+   "lat": 37.4968765,
+   "addr": "강원특별자치도 동해시 월평로 133",
+   "dong": "이로동",
+   "roles": [
+    {
+     "role": "shelter",
+     "sub": "cold",
+     "subLabel": "한파쉼터",
+     "cap": 15,
+     "area": 79.4,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-01-21",
+     "season": "20241115~20250315",
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "heat",
+     "subLabel": "무더위쉼터",
+     "cap": 15,
+     "area": 79.4,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-03-09",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "senior",
+     "subLabel": "어르신 모임",
+     "cap": null,
+     "area": 79,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "kyungro"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": [
+    {
+     "role": "shelter",
+     "facilityId": "F002",
+     "distM": 407,
+     "climbM": 4
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F001",
+     "distM": 829,
+     "climbM": 1
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F002",
+     "distM": 407,
+     "climbM": 4
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F001",
+     "distM": 829,
+     "climbM": 1
+    },
+    {
+     "role": "care",
+     "facilityId": "F002",
+     "distM": 407,
+     "climbM": 4
+    },
+    {
+     "role": "care",
+     "facilityId": "F001",
+     "distM": 829,
+     "climbM": 1
+    }
+   ]
+  },
+  {
+   "id": "F010",
+   "name": "삼정2차아파트 지하주차장 1층",
+   "type": "공동주택",
+   "lon": 129.1077688,
+   "lat": 37.5391392,
+   "addr": "강원특별자치도 동해시 임항로 55 (부곡동, 삼정2차아파트)",
+   "dong": "부곡동",
+   "roles": [
+    {
+     "role": "shelter",
+     "sub": "cold",
+     "subLabel": "한파쉼터",
+     "cap": 15,
+     "area": 68.84,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-01-21",
+     "season": "20241115~20250315",
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "heat",
+     "subLabel": "무더위쉼터",
+     "cap": 15,
+     "area": 68.84,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-03-09",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "evac",
+     "sub": "civil",
+     "subLabel": "민방위대피",
+     "cap": 1794,
+     "area": 1794,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": "2026-10-17",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "play",
+     "subLabel": "어린이 놀이",
+     "cap": null,
+     "area": 206,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": [
+    {
+     "role": "shelter",
+     "facilityId": "F012",
+     "distM": 338,
+     "climbM": 12
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F108",
+     "distM": 403,
+     "climbM": 16
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F012",
+     "distM": 338,
+     "climbM": 12
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F108",
+     "distM": 403,
+     "climbM": 16
+    }
+   ]
+  },
+  {
+   "id": "F011",
+   "name": "동화아파트경로당",
+   "type": "경로당",
+   "lon": 129.1036355,
+   "lat": 37.5348536,
+   "addr": "강원특별자치도 동해시 발한로 31-5 (부곡동, 동화아파트)",
+   "dong": "부곡동",
+   "roles": [
+    {
+     "role": "shelter",
+     "sub": "cold",
+     "subLabel": "한파쉼터",
+     "cap": 15,
+     "area": 72.6,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-01-21",
+     "season": "20241115~20250315",
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "heat",
+     "subLabel": "무더위쉼터",
+     "cap": 15,
+     "area": 72.6,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-03-09",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "senior",
+     "subLabel": "어르신 모임",
+     "cap": null,
+     "area": 73,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "kyungro"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": [
+    {
+     "role": "shelter",
+     "facilityId": "F012",
+     "distM": 327,
+     "climbM": 1
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F012",
+     "distM": 327,
+     "climbM": 1
+    },
+    {
+     "role": "care",
+     "facilityId": "F012",
+     "distM": 327,
+     "climbM": 1
+    }
+   ]
+  },
+  {
+   "id": "F012",
+   "name": "부곡경로당",
+   "type": "경로당",
+   "lon": 129.1069642,
+   "lat": 37.5361489,
+   "addr": "강원특별자치도 동해시 부곡복개로 46 (부곡동)",
+   "dong": "부곡동",
+   "roles": [
+    {
+     "role": "shelter",
+     "sub": "cold",
+     "subLabel": "한파쉼터",
+     "cap": 25,
+     "area": 166.42,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-05-11",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "heat",
+     "subLabel": "무더위쉼터",
+     "cap": 25,
+     "area": 166.42,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-05-11",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "dust",
+     "subLabel": "미세먼지 쉼터",
+     "cap": 123,
+     "area": null,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "senior",
+     "subLabel": "어르신 모임",
+     "cap": null,
+     "area": 166,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "kyungro"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": [
+    {
+     "role": "shelter",
+     "facilityId": "F011",
+     "distM": 327,
+     "climbM": 15
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F010",
+     "distM": 338,
+     "climbM": 12
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F011",
+     "distM": 327,
+     "climbM": 15
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F010",
+     "distM": 338,
+     "climbM": 12
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F131",
+     "distM": 1134,
+     "climbM": 40
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F095",
+     "distM": 1576,
+     "climbM": 28
+    },
+    {
+     "role": "care",
+     "facilityId": "F011",
+     "distM": 327,
+     "climbM": 15
+    }
+   ]
+  },
+  {
+   "id": "F013",
+   "name": "이도현대아파트경로당",
+   "type": "경로당",
+   "lon": 129.1121221,
+   "lat": 37.4794516,
+   "addr": "강원특별자치도 동해시 이원길 180 (이도동, 이도동현대아파트)",
+   "dong": "이도동",
+   "roles": [
+    {
+     "role": "shelter",
+     "sub": "cold",
+     "subLabel": "한파쉼터",
+     "cap": 15,
+     "area": 99,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-01-21",
+     "season": "20241115~20250315",
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "heat",
+     "subLabel": "무더위쉼터",
+     "cap": 15,
+     "area": 99,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-03-09",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "evac",
+     "sub": "civil",
+     "subLabel": "민방위대피",
+     "cap": 1005,
+     "area": 1005,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": "2026-10-17",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "play",
+     "subLabel": "어린이 놀이",
+     "cap": null,
+     "area": 164,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "senior",
+     "subLabel": "어르신 모임",
+     "cap": null,
+     "area": 99,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "kyungro"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": [
+    {
+     "role": "shelter",
+     "facilityId": "F016",
+     "distM": 172,
+     "climbM": 2
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F016",
+     "distM": 172,
+     "climbM": 2
+    },
+    {
+     "role": "care",
+     "facilityId": "F016",
+     "distM": 172,
+     "climbM": 2
+    }
+   ]
+  },
+  {
+   "id": "F014",
+   "name": "쌍용아파트 전체 동의 지하주차장 1층",
+   "type": "공동주택",
+   "lon": 129.1201458,
+   "lat": 37.5199955,
+   "addr": "강원특별자치도 동해시 동굴로 149",
+   "dong": "천곡동",
+   "roles": [
+    {
+     "role": "shelter",
+     "sub": "cold",
+     "subLabel": "한파쉼터",
+     "cap": 15,
+     "area": 62.09,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-01-21",
+     "season": "20241115~20250315",
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "heat",
+     "subLabel": "무더위쉼터",
+     "cap": 15,
+     "area": 62.09,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-03-09",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "evac",
+     "sub": "civil",
+     "subLabel": "민방위대피",
+     "cap": 2936,
+     "area": 2936,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": "2026-10-17",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "play",
+     "subLabel": "어린이 놀이",
+     "cap": null,
+     "area": null,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "senior",
+     "subLabel": "어르신 모임",
+     "cap": null,
+     "area": 62,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "kyungro"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": []
+  },
+  {
+   "id": "F015",
+   "name": "시영아파트경로당",
+   "type": "경로당",
+   "lon": 129.1074126,
+   "lat": 37.5161197,
+   "addr": "강원특별자치도 동해시 동굴로 26",
+   "dong": "",
+   "roles": [
+    {
+     "role": "shelter",
+     "sub": "cold",
+     "subLabel": "한파쉼터",
+     "cap": 15,
+     "area": 83.25,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-01-21",
+     "season": "20241115~20250315",
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "heat",
+     "subLabel": "무더위쉼터",
+     "cap": 15,
+     "area": 83.25,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-03-09",
+     "season": null,
+     "source": "safekorea"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": [
+    {
+     "role": "shelter",
+     "facilityId": "F017",
+     "distM": 352,
+     "climbM": 27
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F017",
+     "distM": 352,
+     "climbM": 27
+    }
+   ]
+  },
+  {
+   "id": "F016",
+   "name": "배골경로당",
+   "type": "경로당",
+   "lon": 129.1103759,
+   "lat": 37.4801306,
+   "addr": "강원특별자치도 동해시 전천로 152 (이도동)",
+   "dong": "이도동",
+   "roles": [
+    {
+     "role": "shelter",
+     "sub": "cold",
+     "subLabel": "한파쉼터",
+     "cap": 25,
+     "area": 165.3,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-01-21",
+     "season": "20241115~20250315",
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "heat",
+     "subLabel": "무더위쉼터",
+     "cap": 25,
+     "area": 165.3,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-03-09",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "senior",
+     "subLabel": "어르신 모임",
+     "cap": null,
+     "area": 165,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "kyungro"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": [
+    {
+     "role": "shelter",
+     "facilityId": "F013",
+     "distM": 172,
+     "climbM": 1
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F013",
+     "distM": 172,
+     "climbM": 1
+    },
+    {
+     "role": "care",
+     "facilityId": "F013",
+     "distM": 172,
+     "climbM": 1
+    }
+   ]
+  },
+  {
+   "id": "F017",
+   "name": "현대아파트경로당",
+   "type": "경로당",
+   "lon": 129.1054911,
+   "lat": 37.5189087,
+   "addr": "강원특별자치도 동해시 한섬로 8",
+   "dong": "천곡동",
+   "roles": [
+    {
+     "role": "shelter",
+     "sub": "cold",
+     "subLabel": "한파쉼터",
+     "cap": 15,
+     "area": 85.8,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-01-21",
+     "season": "20241115~20250315",
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "heat",
+     "subLabel": "무더위쉼터",
+     "cap": 15,
+     "area": 85.8,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-03-09",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "play",
+     "subLabel": "어린이 놀이",
+     "cap": null,
+     "area": null,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "senior",
+     "subLabel": "어르신 모임",
+     "cap": null,
+     "area": 86,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "kyungro"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": []
+  },
+  {
+   "id": "F018",
+   "name": "벽오경로당",
+   "type": "경로당",
+   "lon": 129.115499,
+   "lat": 37.4706922,
+   "addr": "강원특별자치도 동해시 강원남부로 4707 (단봉동)",
+   "dong": "단봉동",
+   "roles": [
+    {
+     "role": "shelter",
+     "sub": "cold",
+     "subLabel": "한파쉼터",
+     "cap": 30,
+     "area": 346.5,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-01-21",
+     "season": "20241115~20250315",
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "heat",
+     "subLabel": "무더위쉼터",
+     "cap": 30,
+     "area": 346.5,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-03-09",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "senior",
+     "subLabel": "어르신 모임",
+     "cap": null,
+     "area": 258,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "kyungro"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": [
+    {
+     "role": "shelter",
+     "facilityId": "F068",
+     "distM": 606,
+     "climbM": 23
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F068",
+     "distM": 606,
+     "climbM": 23
+    },
+    {
+     "role": "care",
+     "facilityId": "F068",
+     "distM": 606,
+     "climbM": 23
+    }
+   ]
+  },
+  {
+   "id": "F019",
+   "name": "송정경로당",
+   "type": "경로당",
+   "lon": 129.1240901,
+   "lat": 37.4949839,
+   "addr": "강원특별자치도 동해시 송정2길 21 (송정동)",
+   "dong": "송정동",
+   "roles": [
+    {
+     "role": "shelter",
+     "sub": "cold",
+     "subLabel": "한파쉼터",
+     "cap": 25,
+     "area": 164.86,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-05-11",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "heat",
+     "subLabel": "무더위쉼터",
+     "cap": 25,
+     "area": 164.86,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-05-11",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "dust",
+     "subLabel": "미세먼지 쉼터",
+     "cap": 172,
+     "area": null,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "senior",
+     "subLabel": "어르신 모임",
+     "cap": null,
+     "area": 165,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "kyungro"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": []
+  },
+  {
+   "id": "F021",
+   "name": "분토경로당",
+   "type": "경로당",
+   "lon": 129.1011894,
+   "lat": 37.5026042,
+   "addr": "강원특별자치도 동해시 분토길 116-1 (지흥동)",
+   "dong": "지흥동",
+   "roles": [
+    {
+     "role": "shelter",
+     "sub": "cold",
+     "subLabel": "한파쉼터",
+     "cap": 15,
+     "area": 76.5,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-01-21",
+     "season": "20241115~20250315",
+     "source": "safekorea"
+    },
+    {
+     "role": "shelter",
+     "sub": "heat",
+     "subLabel": "무더위쉼터",
+     "cap": 15,
+     "area": 76.5,
+     "deptDisaster": "안전과",
+     "deptWelfare": "가족과",
+     "modified": "2026-03-09",
+     "season": null,
+     "source": "safekorea"
+    },
+    {
+     "role": "care",
+     "sub": "senior",
+     "subLabel": "어르신 모임",
+     "cap": null,
+     "area": 77,
+     "deptDisaster": null,
+     "deptWelfare": null,
+     "modified": null,
+     "season": null,
+     "source": "kyungro"
+    }
+   ],
+   "status": "open",
+   "events": [],
+   "alternatives": [
+    {
+     "role": "shelter",
+     "facilityId": "F020",
+     "distM": 546,
+     "climbM": 69
+    },
+    {
+     "role": "shelter",
+     "facilityId": "F020",
+     "distM": 546,
+     "climbM": 69
+    },
+    {
+     "role": "care",
+     "facilityId": "F020",
+     "distM": 546,
+     "climbM": 69
+    }
+   ]
+  }
+ ],
+ "stats": {
+  "facilities": 56,
+  "multiRole": 53,
+  "threePlus": 11
+ }
+}

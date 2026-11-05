@@ -1,0 +1,24 @@
+node_modules/
+.env
+.env.local
+.env.*.local
+dist/
+build/
+.DS_Store
+.vercel
+.vscode/
+*.log
+
+# 저장소에 올리지 않는 작업용 파일(로컬에만 둔다)
+.claude/
+docs/_ref_gchat/
+docs/SESSION_HEADER.md
+docs/PITFALLS.md
+docs/PATTERNS.md
+docs/UI_PLAYBOOK.md
+docs/PROGRESS.md
+tools/**/node_modules/
+*.zip
+*.shp
+*.dbf
+*.shx
